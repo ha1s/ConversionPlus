@@ -1,4 +1,6 @@
-# Convertion plus
+[![Открытый чат проекта https://gitter.im/ConvertionPlus/Lobby](https://badges.gitter.im/ConvertionPlus/Lobby.svg)](https://gitter.im/ConvertionPlus/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+## Convertion plus
 Open-source project: Convertion + OneScript + Git
 
 Цель проекта: вывести групповую разработку правил обмена на новый уровень.
