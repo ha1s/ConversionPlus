@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<DataProcessor uuid="e52b8652-d25f-4611-a0a6-e45e05192e47">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.БыстроеОсвоение" category="Object">
+				<xr:TypeId>7223362a-5c01-4b98-b6f1-5d7bf36e8743</xr:TypeId>
+				<xr:ValueId>1f6835d5-3a40-4784-a166-392421d905a1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.БыстроеОсвоение" category="Manager">
+				<xr:TypeId>d9a04a15-c117-42c0-8ca1-3d7a29b23f02</xr:TypeId>
+				<xr:ValueId>81ce167d-8e83-46ee-9729-684137ec76ee</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>БыстроеОсвоение</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Быстрое освоение 1С:Бухгалтерии 8</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>DataProcessor.БыстроеОсвоение.Form.Форма</DefaultForm>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="40d64d27-c5b4-4920-a1c6-b806f9fae33f">
+				<Properties>
+					<Name>РазделДляОткрытия</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Раздел для открытия</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
+			<Form>Форма</Form>
+			<Form>ФормаПолезнойИнформации</Form>
+			<Template>ДоброПожаловать</Template>
+			<Template>ДляЧегоНужнаПрограмма</Template>
+			<Template>ВыгрузкаИЗагрузкаМетаданных</Template>
+			<Template>СозданиеПравилОбменаДанными</Template>
+			<Template>АвтоматическоеСозданиеПравилОбмена</Template>
+			<Template>ПравилаПоискаОбъектов</Template>
+			<Template>ПравилаВыгрузкиДанных</Template>
+			<Template>ПравилаОчисткиДанных</Template>
+			<Template>ПодробноеЗнакомствоСПравиламиОбмена</Template>
+			<Template>ПодробноеЗнакомствоСПравиламиКонвертацииОбъектов</Template>
+			<Template>ПодробноеЗнакомствоСПравиламиКонвертацииСвойств</Template>
+			<Template>ЧтоТакоеОбработчикиСобытий</Template>
+			<Template>ЧтоТакоеАлгоритмыИЗапросы</Template>
+			<Template>ОптимизацияПравилОбменаДанными</Template>
+			<Template>ПравилаРегистрацииОбъектов</Template>
+			<Template>ПравилаРегистрацииОбъектовОсобенностиИспользования</Template>
+			<Template>СозданиеПравилРегистрацииОбъектов</Template>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

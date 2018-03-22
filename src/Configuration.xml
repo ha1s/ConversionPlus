@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Configuration uuid="c03b12af-b17c-4e98-b06f-c09e5b8f9fa1">
+		<InternalInfo>
+			<xr:ContainedObject>
+				<xr:ClassId>9cd510cd-abfc-11d4-9434-004095e12fc7</xr:ClassId>
+				<xr:ObjectId>acd12b34-8e67-4354-a7f9-670234b35f1a</xr:ObjectId>
+			</xr:ContainedObject>
+			<xr:ContainedObject>
+				<xr:ClassId>9fcd25a0-4822-11d4-9414-008048da11f9</xr:ClassId>
+				<xr:ObjectId>f57b97b5-1fac-4401-a0d8-21549471e865</xr:ObjectId>
+			</xr:ContainedObject>
+			<xr:ContainedObject>
+				<xr:ClassId>e3687481-0a87-462c-a166-9f34594f9bba</xr:ClassId>
+				<xr:ObjectId>00ab15ad-c590-491c-985a-df9989de2ad3</xr:ObjectId>
+			</xr:ContainedObject>
+			<xr:ContainedObject>
+				<xr:ClassId>9de14907-ec23-4a07-96f0-85521cb6b53b</xr:ClassId>
+				<xr:ObjectId>78fb334c-1d84-49f1-8770-3c1564ee1afb</xr:ObjectId>
+			</xr:ContainedObject>
+			<xr:ContainedObject>
+				<xr:ClassId>51f2d5d8-ea4d-4064-8892-82951750031e</xr:ClassId>
+				<xr:ObjectId>e9f389b1-1905-48d7-9673-808e25e9643f</xr:ObjectId>
+			</xr:ContainedObject>
+			<xr:ContainedObject>
+				<xr:ClassId>e68182ea-4237-4383-967f-90c1e3370bc7</xr:ClassId>
+				<xr:ObjectId>fc6de380-8135-42a3-a142-7f04e6ef62c3</xr:ObjectId>
+			</xr:ContainedObject>
+		</InternalInfo>
+		<Properties>
+			<Name>КонвертацияДанныхРедакция21</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конвертация данных, редакция 2.1</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Программа для разработки правил обмена данными</Comment>
+			<NamePrefix/>
+			<ConfigurationExtensionCompatibilityMode>Version8_3_10</ConfigurationExtensionCompatibilityMode>
+			<DefaultRunMode>OrdinaryApplication</DefaultRunMode>
+			<UsePurposes>
+				<v8:Value xsi:type="app:ApplicationUsePurpose">PersonalComputer</v8:Value>
+			</UsePurposes>
+			<ScriptVariant>Russian</ScriptVariant>
+			<DefaultRoles>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПолныеПрава</xr:Item>
+			</DefaultRoles>
+			<Vendor>Фирма "1С"</Vendor>
+			<Version>2.1.8.2</Version>
+			<UpdateCatalogAddress/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
+			<UseOrdinaryFormInManagedApplication>false</UseOrdinaryFormInManagedApplication>
+			<AdditionalFullTextSearchDictionaries/>
+			<CommonSettingsStorage/>
+			<ReportsUserSettingsStorage/>
+			<ReportsVariantsStorage/>
+			<FormDataSettingsStorage/>
+			<DynamicListsUserSettingsStorage/>
+			<Content/>
+			<DefaultReportForm/>
+			<DefaultReportVariantForm/>
+			<DefaultReportSettingsForm/>
+			<DefaultDynamicListSettingsForm/>
+			<DefaultSearchForm/>
+			<RequiredMobileApplicationPermissions>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">Multimedia</v8:Key>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">Location</v8:Key>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">Contacts</v8:Key>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">Calendars</v8:Key>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">Telephony</v8:Key>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">PushNotification</v8:Key>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">LocalNotification</v8:Key>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">Print</v8:Key>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">InAppPurchases</v8:Key>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">Ads</v8:Key>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
+				</v8:pair>
+			</RequiredMobileApplicationPermissions>
+			<MainClientApplicationWindowMode>Normal</MainClientApplicationWindowMode>
+			<DefaultInterface>Interface.Полный</DefaultInterface>
+			<DefaultStyle>Style.Основной</DefaultStyle>
+			<DefaultLanguage>Language.Русский</DefaultLanguage>
+			<BriefInformation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конвертация данных, редакция 2.1</v8:content>
+				</v8:item>
+			</BriefInformation>
+			<DetailedInformation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конвертация данных, редакция 2.1</v8:content>
+				</v8:item>
+			</DetailedInformation>
+			<Copyright>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Copyright © ЗАО "1C", 2005 - 2013. Все права защищены</v8:content>
+				</v8:item>
+			</Copyright>
+			<VendorInformationAddress>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>http://www.1c.ru</v8:content>
+				</v8:item>
+			</VendorInformationAddress>
+			<ConfigurationInformationAddress/>
+			<DataLockControlMode>Automatic</DataLockControlMode>
+			<ObjectAutonumerationMode>AutoFree</ObjectAutonumerationMode>
+			<ModalityUseMode>Use</ModalityUseMode>
+			<SynchronousPlatformExtensionAndAddInCallUseMode>Use</SynchronousPlatformExtensionAndAddInCallUseMode>
+			<InterfaceCompatibilityMode>Version8_2</InterfaceCompatibilityMode>
+			<CompatibilityMode>Version8_2_13</CompatibilityMode>
+			<DefaultConstantsForm/>
+		</Properties>
+		<ChildObjects>
+			<Language>Русский</Language>
+			<Subsystem>ОписаниеМетаданных</Subsystem>
+			<Subsystem>ПравилаОбмена</Subsystem>
+			<Subsystem>ПравилаРегистрации</Subsystem>
+			<Subsystem>Конвертация</Subsystem>
+			<Subsystem>bnГитфлоу</Subsystem>
+			<StyleItem>ТекстИнформационнойНадписи</StyleItem>
+			<StyleItem>ТекстПредупреждающейНадписи</StyleItem>
+			<StyleItem>ШрифтВажнойНадписи</StyleItem>
+			<StyleItem>ТекстДляМастераНастроек</StyleItem>
+			<StyleItem>ТекстДляМастераНастроекЗаголовок</StyleItem>
+			<Style>Основной</Style>
+			<CommonPicture>Группа</CommonPicture>
+			<CommonPicture>ГруппаИЭлемент</CommonPicture>
+			<CommonPicture>ЗначокБыстроеОсвоение16</CommonPicture>
+			<CommonPicture>ЗначокБыстроеОсвоение32</CommonPicture>
+			<CommonPicture>ЗначокДобавитьДокумент16</CommonPicture>
+			<CommonPicture>ЗначокНастройкаПараметровУчета16</CommonPicture>
+			<CommonPicture>ЗначокНастройкаПараметровУчета32</CommonPicture>
+			<CommonPicture>ЗначокСправочник32</CommonPicture>
+			<CommonPicture>ЗначокСтартовыйПомощник16</CommonPicture>
+			<CommonPicture>ЗначокСтартовыйПомощник32</CommonPicture>
+			<CommonPicture>Информация</CommonPicture>
+			<CommonPicture>История</CommonPicture>
+			<CommonPicture>КоллекцияОбъектыМетаданных</CommonPicture>
+			<CommonPicture>КоллекцияРежимыАвторегистрации</CommonPicture>
+			<CommonPicture>Конфигуратор77</CommonPicture>
+			<CommonPicture>Конфигуратор80</CommonPicture>
+			<CommonPicture>КонфигураторУправляемоеПриложение</CommonPicture>
+			<CommonPicture>Конфигурация</CommonPicture>
+			<CommonPicture>Мастер</CommonPicture>
+			<CommonPicture>НастройкаПравилРегистрации16</CommonPicture>
+			<CommonPicture>НастройкаПравилРегистрации32</CommonPicture>
+			<CommonPicture>Настройки</CommonPicture>
+			<CommonPicture>ОбменДанными</CommonPicture>
+			<CommonPicture>Отладчик77</CommonPicture>
+			<CommonPicture>ПанельФункций</CommonPicture>
+			<CommonPicture>Поиск</CommonPicture>
+			<CommonPicture>ПоискДанных</CommonPicture>
+			<CommonPicture>ПоказатьРазличия</CommonPicture>
+			<CommonPicture>ПравилаРегистрации</CommonPicture>
+			<CommonPicture>Предопределенные</CommonPicture>
+			<CommonPicture>Предприятие77</CommonPicture>
+			<CommonPicture>Предприятие80</CommonPicture>
+			<CommonPicture>ПродолжитьПоиск</CommonPicture>
+			<CommonPicture>ПрочееСобытие</CommonPicture>
+			<CommonPicture>Содержание</CommonPicture>
+			<CommonPicture>Сравнить</CommonPicture>
+			<CommonPicture>СравнитьСЛевым</CommonPicture>
+			<CommonPicture>СравнитьСПравым</CommonPicture>
+			<CommonPicture>СравнитьФайлы</CommonPicture>
+			<CommonPicture>ТабличнаяЧасть</CommonPicture>
+			<CommonPicture>УправляемоеПриложение</CommonPicture>
+			<CommonPicture>Элемент</CommonPicture>
+			<CommonPicture>ЭлементУдаление</CommonPicture>
+			<Interface>Полный</Interface>
+			<SessionParameter>ТекущийПользователь</SessionParameter>
+			<Role>ПолныеПрава</Role>
+			<FilterCriterion>СсылкиНаПКО</FilterCriterion>
+			<CommonModule>ОбщегоНазначения</CommonModule>
+			<CommonModule>ОбщегоНазначенияПовтИсп</CommonModule>
+			<CommonModule>РаботаСФайлами</CommonModule>
+			<CommonModule>СтроковыеФункции</CommonModule>
+			<CommonModule>УниверсальныеМеханизмы</CommonModule>
+			<CommonModule>УправлениеПользователями</CommonModule>
+			<CommonModule>bnГитфлоу</CommonModule>
+			<CommonModule>bnГитфлоуПовтИсп</CommonModule>
+			<Constant>НомерВерсииКонфигурации</Constant>
+			<CommonForm>Конфигурация</CommonForm>
+			<CommonForm>ПравилаОбмена</CommonForm>
+			<CommonForm>ПравилаРегистрации</CommonForm>
+			<CommonForm>ПриведениеНомераКДлине</CommonForm>
+			<CommonForm>ФормаИнформацииПриВыбореПустойКонвертации</CommonForm>
+			<CommonForm>ФормаРедактированияТекста</CommonForm>
+			<CommonForm>ХодВыполненияОбработкиДанных</CommonForm>
+			<CommonForm>bnНастройкиГитфлоу</CommonForm>
+			<Catalog>Алгоритмы</Catalog>
+			<Catalog>Запросы</Catalog>
+			<Catalog>Значения</Catalog>
+			<Catalog>Конвертации</Catalog>
+			<Catalog>Конфигурации</Catalog>
+			<Catalog>Обработки</Catalog>
+			<Catalog>Объекты</Catalog>
+			<Catalog>Параметры</Catalog>
+			<Catalog>Пользователи</Catalog>
+			<Catalog>ПравилаВыгрузкиДанных</Catalog>
+			<Catalog>ПравилаКонвертацииЗначений</Catalog>
+			<Catalog>ПравилаКонвертацииОбъектов</Catalog>
+			<Catalog>ПравилаКонвертацииСвойств</Catalog>
+			<Catalog>ПравилаОчисткиДанных</Catalog>
+			<Catalog>ПравилаРегистрацииОбъектов</Catalog>
+			<Catalog>Регистрации</Catalog>
+			<Catalog>Свойства</Catalog>
+			<Enum>БулевыОперации</Enum>
+			<Enum>ВидыСвойств</Enum>
+			<Enum>ВидыСравнения</Enum>
+			<Enum>Приложения</Enum>
+			<Enum>ПриоритетОбъектовОбмена</Enum>
+			<Enum>СпособыОтбораДанных</Enum>
+			<Enum>ТипыОбъектов</Enum>
+			<Enum>РежимСовместимости</Enum>
+			<Report>ОтчетПоПравиламОбменаДанными</Report>
+			<Report>ОтчетПоПравиламРегистрацииОбъектов</Report>
+			<DataProcessor>АвтонастройкаПравилКонвертацииЗначений</DataProcessor>
+			<DataProcessor>АвтонастройкаПравилКонвертацииОбъектов</DataProcessor>
+			<DataProcessor>АвтонастройкаПравилКонвертацииСвойств</DataProcessor>
+			<DataProcessor>БыстроеОсвоение</DataProcessor>
+			<DataProcessor>ВыгрузкаЗагрузкаДанныхXML</DataProcessor>
+			<DataProcessor>ВыгрузкаКонвертации</DataProcessor>
+			<DataProcessor>ВыгрузкаМетаданных</DataProcessor>
+			<DataProcessor>ВыгрузкаОбработчиков</DataProcessor>
+			<DataProcessor>ВыгрузкаРегистрации</DataProcessor>
+			<DataProcessor>ГрупповаяОбработкаСправочниковИДокументов</DataProcessor>
+			<DataProcessor>ГрупповоеСозданиеПравилКонвертацииСвойствЗначений</DataProcessor>
+			<DataProcessor>ЗагрузкаКонвертации</DataProcessor>
+			<DataProcessor>ЗагрузкаОбработчиков</DataProcessor>
+			<DataProcessor>ЗагрузкаРегистрации</DataProcessor>
+			<DataProcessor>ЗагрузкаСтруктурыМетаданных</DataProcessor>
+			<DataProcessor>ИнформацияОбОбработчиках</DataProcessor>
+			<DataProcessor>ОбновлениеИнформационнойБазы</DataProcessor>
+			<DataProcessor>ПанельФункций</DataProcessor>
+			<DataProcessor>ПоискДанных</DataProcessor>
+			<DataProcessor>ПроверкаКонвертации</DataProcessor>
+			<DataProcessor>СинхронизацияПравил</DataProcessor>
+			<DataProcessor>СозданиеПравилВыгрузкиДанных</DataProcessor>
+			<DataProcessor>СравнениеИОбъединениеПравилОбмена</DataProcessor>
+			<DataProcessor>СравнениеМетаданных</DataProcessor>
+			<DataProcessor>СтартовыйПомощник</DataProcessor>
+			<DataProcessor>УниверсальныйПоискОбъектов</DataProcessor>
+			<InformationRegister>СохраненныеНастройки</InformationRegister>
+			<InformationRegister>ФайлыПользователей</InformationRegister>
+		</ChildObjects>
+	</Configuration>
+</MetaDataObject>

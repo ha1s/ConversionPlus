@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><link href="__STYLE__" type="text/css" rel="stylesheet"></link><meta content="MSHTML 6.00.5730.11" name="GENERATOR"></meta><style>A:link {
+	FONT-WEIGHT: bold; COLOR: #0000ff; TEXT-DECORATION: underline
+}
+A:visited {
+	FONT-WEIGHT: bold; COLOR: #0000ff; TEXT-DECORATION: underline
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 18pt; COLOR: #003366; FONT-FAMILY: Ariall, Tahoma; TEXT-ALIGN: left
+}
+H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14pt; FONT-FAMILY: Arial, Tahoma; TEXT-ALIGN: left
+}
+H3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; FONT-FAMILY: Arial, Tahoma; TEXT-ALIGN: left
+}
+TABLE {
+	FONT-SIZE: x-small
+}
+TABLE .Programtext {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; COLOR: #0000ff; PADDING-TOP: 10px; BACKGROUND-COLOR: #f0f0f0
+}
+BODY {
+	FONT-SIZE: x-small; FONT-FAMILY: Verdana
+}
+.withBorder {
+	BORDER-RIGHT: #ffd700 1px solid; BORDER-TOP: #ffd700 1px solid; FONT-SIZE: x-small; FONT-FAMILY: Verdana; TEXT-ALIGN: left
+}
+.withBorder TD {
+	BORDER-LEFT: #ffd700 1px solid; BORDER-BOTTOM: #ffd700 1px solid
+}
+.withBorder TH {
+	BORDER-LEFT: #ffd700 1px solid; BORDER-BOTTOM: #ffd700 1px solid; BACKGROUND-COLOR: #ffffee
+}
+UL.TOC LI {
+	LIST-STYLE-TYPE: none
+}
+.Programtext {
+	FONT-SIZE: 10pt; COLOR: #000080; FONT-FAMILY: Courier
+}
+PRE.Query {
+	FONT-SIZE: 10pt; COLOR: #000080; FONT-FAMILY: Courier
+}
+PRE.xml {
+	FONT-SIZE: 10pt; COLOR: #000080; FONT-FAMILY: Courier
+}
+PRE.vbcode {
+	FONT-SIZE: 10pt; COLOR: #000080; FONT-FAMILY: Courier
+}
+PRE {
+	FONT-SIZE: 10pt
+}
+.Marker {
+	BACKGROUND-COLOR: #ffff00
+}
+.heading {
+	FONT-WEIGHT: bold; BORDER-LEFT: #ffd700 1px solid; BORDER-BOTTOM: #ffd700 1px solid; BACKGROUND-COLOR: #ffffee
+}
+.tip {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 15px; PADDING-LEFT: 15px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 15px; WIDTH: 95%; PADDING-TOP: 15px; BACKGROUND-COLOR: #eeffee; BORDER-RIGHT-WIDTH: 0px
+}
+.tip TD {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 15px; PADDING-LEFT: 15px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 15px; WIDTH: 95%; PADDING-TOP: 15px; BACKGROUND-COLOR: #eeffee; BORDER-RIGHT-WIDTH: 0px
+}
+.important {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 15px; PADDING-LEFT: 15px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 15px; WIDTH: 95%; PADDING-TOP: 15px; BACKGROUND-COLOR: #ffeeee; BORDER-RIGHT-WIDTH: 0px
+}
+.important TD {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 15px; PADDING-LEFT: 15px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 15px; WIDTH: 95%; PADDING-TOP: 15px; BACKGROUND-COLOR: #ffeeee; BORDER-RIGHT-WIDTH: 0px
+}
+.note {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 15px; PADDING-LEFT: 15px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 15px; WIDTH: 95%; PADDING-TOP: 15px; BACKGROUND-COLOR: #eeeeff; BORDER-RIGHT-WIDTH: 0px
+}
+.note TD {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 15px; PADDING-LEFT: 15px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 15px; WIDTH: 95%; PADDING-TOP: 15px; BACKGROUND-COLOR: #eeeeff; BORDER-RIGHT-WIDTH: 0px
+}
+.k {
+	COLOR: red
+}
+.c {
+	COLOR: green
+}
+.s {
+	COLOR: black
+}
+.n {
+	COLOR: black
+}
+.p {
+	COLOR: brown
+}
+OL LI {
+	MARGIN-BOTTOM: 12pt
+}
+</style></head><body>
+<div align="left"><nobr>  </nobr></div>
+<h2>Правила очистки данных</h2>
+<p>Правила очистки данных используются довольно редко. Их основная задача пометить на удаление или удалить из информационной базы некоторые объекты перед загрузкой данных.</p>
+<p>Рассмотрим один из вариантов использования правил очистки данных на примере:</p>
+<p><span lang="ru">Торговое предприятие принимает решение открыть офис по приему заказов на продукты питания в пригороде. Для эффективной работы необходимо постоянно иметь в базе данных офиса актуальную версию справочника Номенклатура. Причем, было решено каждый раз помечать на удаление те номенклатурные позиции, которых в настоящий момент нет на складе в центральном офисе. Загрузка справочника должна производиться еженедельно, при этом товары, зарегистрированные в базе данных офиса, заказ которых стал невозможен (например, нет на складе) должны быть помечены на удаление, или при восстановлении доступности номенклатурной позиции для заказа - пометка удаления должна быть снята.</span></p>
+<p><span lang="ru">Реализовать такой механизм нам поможет использование правил очистки данных. Правила очистки выполняются в базе приемнике перед загрузкой объектов. С помощью этого инструмента можно пометить на удаление или удалить непосредственно объекты данных. В нашем случае мы будем ставить пометки на удаления у элементов справочника Номенклатура. При синхронизации элемента справочника в момент загрузки, пометка будет снята, поскольку загружаемые элементы Номенклатуры не имеют пометки на удаление. Таким образом, все "лишние" элементы, отсутствующие в загружаемом файле, останутся помеченными на удаление.</span></p>
+<p><span lang="ru">Правила очистки данных задаются на закладке "Правила очистки данных". Покажем как это делается:</span></p>
+<p><img height="572" alt="Создание правила очистки данных" src="_files/20.bmp" width="749"></img></p>
+<p>Достаточно указать объект для выборки данных - то есть для удаления, указать что нужно помечать объекты на удаление, а не физически удалять из информационной базы и нажать на "ОК".</p>
+<p> </p>
+<p><a title="" href="DataProcessor.БыстроеОсвоение.Template.ПодробноеЗнакомствоСПравиламиОбмена/Template">Следующий раздел: «Подробное знакомство с правилами обмена»</a></p></body></html>

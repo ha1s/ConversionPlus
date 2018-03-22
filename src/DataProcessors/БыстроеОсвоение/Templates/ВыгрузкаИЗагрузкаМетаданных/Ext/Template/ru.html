@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><link href="__STYLE__" type="text/css" rel="stylesheet"></link><meta content="MSHTML 6.00.5730.11" name="GENERATOR"></meta><style>A:link {
+	FONT-WEIGHT: bold; COLOR: #0000ff; TEXT-DECORATION: underline
+}
+A:visited {
+	FONT-WEIGHT: bold; COLOR: #0000ff; TEXT-DECORATION: underline
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 18pt; COLOR: #003366; FONT-FAMILY: Ariall, Tahoma; TEXT-ALIGN: left
+}
+H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14pt; FONT-FAMILY: Arial, Tahoma; TEXT-ALIGN: left
+}
+H3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; FONT-FAMILY: Arial, Tahoma; TEXT-ALIGN: left
+}
+TABLE {
+	FONT-SIZE: x-small
+}
+TABLE .Programtext {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; COLOR: #0000ff; PADDING-TOP: 10px; BACKGROUND-COLOR: #f0f0f0
+}
+BODY {
+	FONT-SIZE: x-small; FONT-FAMILY: Verdana
+}
+.withBorder {
+	BORDER-RIGHT: #ffd700 1px solid; BORDER-TOP: #ffd700 1px solid; FONT-SIZE: x-small; FONT-FAMILY: Verdana; TEXT-ALIGN: left
+}
+.withBorder TD {
+	BORDER-LEFT: #ffd700 1px solid; BORDER-BOTTOM: #ffd700 1px solid
+}
+.withBorder TH {
+	BORDER-LEFT: #ffd700 1px solid; BORDER-BOTTOM: #ffd700 1px solid; BACKGROUND-COLOR: #ffffee
+}
+UL.TOC LI {
+	LIST-STYLE-TYPE: none
+}
+.Programtext {
+	FONT-SIZE: 10pt; COLOR: #000080; FONT-FAMILY: Courier
+}
+PRE.Query {
+	FONT-SIZE: 10pt; COLOR: #000080; FONT-FAMILY: Courier
+}
+PRE.xml {
+	FONT-SIZE: 10pt; COLOR: #000080; FONT-FAMILY: Courier
+}
+PRE.vbcode {
+	FONT-SIZE: 10pt; COLOR: #000080; FONT-FAMILY: Courier
+}
+PRE {
+	FONT-SIZE: 10pt
+}
+.Marker {
+	BACKGROUND-COLOR: #ffff00
+}
+.heading {
+	FONT-WEIGHT: bold; BORDER-LEFT: #ffd700 1px solid; BORDER-BOTTOM: #ffd700 1px solid; BACKGROUND-COLOR: #ffffee
+}
+.tip {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 15px; PADDING-LEFT: 15px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 15px; WIDTH: 95%; PADDING-TOP: 15px; BACKGROUND-COLOR: #eeffee; BORDER-RIGHT-WIDTH: 0px
+}
+.tip TD {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 15px; PADDING-LEFT: 15px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 15px; WIDTH: 95%; PADDING-TOP: 15px; BACKGROUND-COLOR: #eeffee; BORDER-RIGHT-WIDTH: 0px
+}
+.important {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 15px; PADDING-LEFT: 15px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 15px; WIDTH: 95%; PADDING-TOP: 15px; BACKGROUND-COLOR: #ffeeee; BORDER-RIGHT-WIDTH: 0px
+}
+.important TD {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 15px; PADDING-LEFT: 15px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 15px; WIDTH: 95%; PADDING-TOP: 15px; BACKGROUND-COLOR: #ffeeee; BORDER-RIGHT-WIDTH: 0px
+}
+.note {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 15px; PADDING-LEFT: 15px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 15px; WIDTH: 95%; PADDING-TOP: 15px; BACKGROUND-COLOR: #eeeeff; BORDER-RIGHT-WIDTH: 0px
+}
+.note TD {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 15px; PADDING-LEFT: 15px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 15px; WIDTH: 95%; PADDING-TOP: 15px; BACKGROUND-COLOR: #eeeeff; BORDER-RIGHT-WIDTH: 0px
+}
+.k {
+	COLOR: red
+}
+.c {
+	COLOR: green
+}
+.s {
+	COLOR: black
+}
+.n {
+	COLOR: black
+}
+.p {
+	COLOR: brown
+}
+OL LI {
+	MARGIN-BOTTOM: 12pt
+}
+</style></head><body>
+<div align="left"><nobr>  </nobr></div>
+<h2>Выгрузка и загрузка информации о структуре информационной базы</h2>
+<h3 class="">Выгрузка информации о структуре информационной базы</h3>
+<p>Итак, для создания правил обмена данными нам нужна информация о структуре информационных баз участвующих в обмене. Если мы будем знать структуру информационных баз, то сможем задать какие объекты информационной базы источника должны преобразовываться в объекты информационной базы приемника. То есть по сути, сможем настроить правила обмена данными между двумя информационными базами.</p>
+<p>У нас имеется информационная база по которой нам нужно получить информацию о ее структуре. Выгрузим информацию о структуре информационной базы в файл. <span lang="ru">Для этого используется внешняя обработка MD81Exp.epf и MD80Exp.epf  для конфигураций на платформе "1С:Предприятии 8.1" и  "1С:Предприятии 8.0" а так же MD77Exp.ert для конфигураций на платформе "1С:Предприятии 7.7". Эти обработки входят в комплект дистрибутива конфигурации "Конвертация данных 2.0".</span></p>
+<p><span lang="ru">Для подготовки XML-файла содержащего описание структуры метаданных конфигурации нужно запустить внешнюю обработку соответствующую версии платформы , указать путь для файла, в который необходимо выгрузить информацию о структуре информационной базы </span><span lang="ru">и нажать кнопку "Выгрузить".</span></p>
+<p><span lang="ru">Если наша информационная база работает на базе платформы 1С:Предприятие 8.1, то процесс выгрузки информации о структуре информационной базы будет выглядеть следующим образом:</span></p>
+<p><span lang="ru">1. Открытие информационной базы, информацию о структуре метаданных которой необходимо получить (одинаков для всех платформ) </span></p>
+<p><span lang="ru">2. Открытие внешней обработки MD81Exp.epf. Для этого достаточно в главном меню открыть пункт "Файл\Открыть" и указать путь по которому располагается обработка MD81Exp.epf (для платформы 7.7 и 8.0 нужно открывать обработки MD77Exp.ert  соответственно MD80Exp.epf).</span></p>
+<p><span lang="ru">3. Указание имени файла, в который необходимо сохранить информацию о структуре информационной базы</span></p>
+<p><span lang="ru"><img alt="Выгрузка информации о структуре информационной базы" src="_files/1.bmp" align="middle"></img></span></p>
+<p><span lang="ru">4. Нажатие на кнопку  Выполнить</span></p>
+<p><span lang="ru"><img height="286" alt="Выгрузка информации о структуре информационной базы" src="_files/11.bmp" width="418" align="middle"></img></span></p>
+<p><span lang="ru">Эти действия позволили нам выгрузить информацию структуре информационной базы.</span></p>
+<p><span lang="ru">Осталось только загрузить данную информацию в программу и можно будет приступить к настройке правил обмена данными.</span></p>
+<h3><span lang="ru">Загрузка информации о структуре информационной базы</span></h3>
+<p><span lang="ru">Когда файл с информацией о структуре метаданных готов, его можно загрузить в конфигурацию "Конвертация данных".</span></p>
+<p><span lang="ru">Для этого достаточно открыть "Панель функций" и выбрать пункт "Загрузить структуру метаданных конфигурации". </span></p>
+<p><span lang="ru"><img height="105" alt="Выбор пунка &quot;Загрузка структуры информационной базы&quot;" src="_files/5.bmp" width="370"></img></span></p>
+<p><span lang="ru">После чего откроется форма в которой необходимо указать путь к файлу, в котором хранится информация о структуре информационной базы.</span></p>
+<p><img height="305" alt="Загрузка структуры информационной базы" src="_files/2.bmp" width="444"></img></p>
+<p>Имеется возможность загрузить данные о структуре конфигурации в новый элемент, либо модифицировать уже загруженную структуру метаданных информационной базы.<br>После нажатия на кнопку "Выполнить загрузку" программа загрузит информацию о структуре информационной базы (Процесс загрузки информации о структуре метаданных информационной базы может потребовать некоторого времени. О ходе загрузки данных программа будет Вас информировать сообщая количество загруженных объектов, их свойств и предопределенных значений).</p>
+<p>После окончания загрузки программа откроет информацию о загруженных данных. При этом будет создан новый элемент справочника "Конфигурации". Этот элемент справочника в дальнейшем будет соответствовать информации о выгруженной конфигурации.</p>
+<p><img alt="Информация о конфигурации" src="_files/3.bmp"></img></p>
+<p>В справочнике "Конфигурации" хранится информация о информационной базе из которой были выгружены данные. Имеется возможность посмотреть информацию о структуре информационной базы.</p>
+<p><img height="623" alt="Структура информационной базы" src="_files/4.bmp" width="865"></img></p>
+<p><span lang="ru">В верхней части формы в виде дерева представлена структура метаданных. В табличной части на закладке "Свойства" показаны реквизиты, табличные части объектов метаданных. Для документов дополнительно показана структура записей регистров, движения по которым делает соответствующий документ.</span></p>
+<p><span lang="ru">Если информация о структуре метаданных информационной базы источника и приемника загружена полностью, то все готово для создания правил обмена данными.</span></p>
+<p><a title="" href="DataProcessor.БыстроеОсвоение.Template.СозданиеПравилОбменаДанными/Template">Следующий раздел: «Создание правил обмена данными (конвертации)»</a> </p></body></html>

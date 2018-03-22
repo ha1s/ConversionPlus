@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Subsystem uuid="ecd26ee8-4573-4d85-a9e7-ae5646658f10">
+		<Properties>
+			<Name>Конвертация</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конвертация</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ТекстИнформационнойНадписи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ТекстПредупреждающейНадписи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ШрифтВажнойНадписи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ТекстДляМастераНастроек</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ТекстДляМастераНастроекЗаголовок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Style.Основной</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Группа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ГруппаИЭлемент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЗначокБыстроеОсвоение16</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЗначокБыстроеОсвоение32</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЗначокДобавитьДокумент16</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЗначокНастройкаПараметровУчета16</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЗначокНастройкаПараметровУчета32</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЗначокСправочник32</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЗначокСтартовыйПомощник16</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЗначокСтартовыйПомощник32</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Информация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.История</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Конфигуратор77</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Конфигуратор80</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КонфигураторУправляемоеПриложение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Конфигурация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Мастер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Настройки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ОбменДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Отладчик77</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПанельФункций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Поиск</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПоискДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Предопределенные</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Предприятие77</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Предприятие80</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПродолжитьПоиск</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПрочееСобытие</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Содержание</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.СравнитьФайлы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ТабличнаяЧасть</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.УправляемоеПриложение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Элемент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Interface.Полный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.ТекущийПользователь</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПолныеПрава</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщегоНазначения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УниверсальныеМеханизмы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УправлениеПользователями</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.НомерВерсииКонфигурации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ПриведениеНомераКДлине</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаИнформацииПриВыбореПустойКонвертации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаРедактированияТекста</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ХодВыполненияОбработкиДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Пользователи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.АвтонастройкаПравилКонвертацииЗначений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.АвтонастройкаПравилКонвертацииОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.АвтонастройкаПравилКонвертацииСвойств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.БыстроеОсвоение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ВыгрузкаКонвертации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ВыгрузкаМетаданных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ГрупповаяОбработкаСправочниковИДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ГрупповоеСозданиеПравилКонвертацииСвойствЗначений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаКонвертации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаСтруктурыМетаданных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ИнформацияОбОбработчиках</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОбновлениеИнформационнойБазы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПанельФункций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПоискДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПроверкаКонвертации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.СинхронизацияПравил</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.СозданиеПравилВыгрузкиДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.СравнениеМетаданных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.СтартовыйПомощник</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УниверсальныйПоискОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СохраненныеНастройки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщегоНазначенияПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ВыгрузкаОбработчиков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаОбработчиков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.РежимСовместимости</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>
