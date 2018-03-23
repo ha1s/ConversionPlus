@@ -1,6 +1,6 @@
 [![Открытый чат проекта https://gitter.im/ConvertionPlus/Lobby](https://badges.gitter.im/ConvertionPlus/Lobby.svg)](https://gitter.im/ConvertionPlus/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) Здесь вы можете задавать любые вопросы разработчикам и активным участникам
 
-# Convertion plus
+# Conversion plus
 Open-source project: Convertion + OneScript + Git
 
 ### Идея проекта
