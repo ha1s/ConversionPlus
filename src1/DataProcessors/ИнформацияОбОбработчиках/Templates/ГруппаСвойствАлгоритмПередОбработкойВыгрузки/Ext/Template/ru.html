@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta><link rel="stylesheet" type="text/css" href="__STYLE__"></link><meta name="GENERATOR" content="MSHTML 9.00.8112.16441"></meta><style>A:link {
+	COLOR: #0000ff; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+A:visited {
+	COLOR: #0000ff; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+H1 {
+	TEXT-ALIGN: left; FONT-FAMILY: Ariall, Tahoma; COLOR: #003366; FONT-SIZE: 18pt; FONT-WEIGHT: bold
+}
+H2 {
+	TEXT-ALIGN: left; FONT-FAMILY: Arial, Tahoma; FONT-SIZE: 14pt; FONT-WEIGHT: bold
+}
+H3 {
+	TEXT-ALIGN: left; FONT-FAMILY: Arial, Tahoma; FONT-SIZE: 12pt; FONT-WEIGHT: bold
+}
+TABLE {
+	FONT-SIZE: x-small
+}
+TABLE .Programtext {
+	PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #f0f0f0; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; COLOR: #0000ff; PADDING-TOP: 10px
+}
+BODY {
+	FONT-FAMILY: Verdana; FONT-SIZE: x-small
+}
+.withBorder {
+	TEXT-ALIGN: left; FONT-FAMILY: Verdana; FONT-SIZE: x-small; BORDER-TOP: #ffd700 1px solid; BORDER-RIGHT: #ffd700 1px solid
+}
+.withBorder TD {
+	BORDER-BOTTOM: #ffd700 1px solid; BORDER-LEFT: #ffd700 1px solid
+}
+.withBorder TH {
+	BORDER-BOTTOM: #ffd700 1px solid; BORDER-LEFT: #ffd700 1px solid; BACKGROUND-COLOR: #ffffee
+}
+UL.TOC LI {
+	LIST-STYLE-TYPE: none
+}
+.Programtext {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE.Query {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE.xml {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE.vbcode {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE {
+	FONT-SIZE: 10pt
+}
+.Marker {
+	BACKGROUND-COLOR: #ffff00
+}
+.heading {
+	BORDER-BOTTOM: #ffd700 1px solid; BORDER-LEFT: #ffd700 1px solid; BACKGROUND-COLOR: #ffffee; FONT-WEIGHT: bold
+}
+.tip {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeffee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.tip TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeffee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.important {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #ffeeee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.important TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #ffeeee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.note {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeeeff; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.note TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeeeff; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.k {
+	COLOR: red
+}
+.c {
+	COLOR: green
+}
+.s {
+	COLOR: black
+}
+.n {
+	COLOR: black
+}
+.p {
+	COLOR: brown
+}
+OL LI {
+	MARGIN-BOTTOM: 12pt
+}
+</style></head><body>
+<div align="left"><nobr>  </nobr></div>
+<h1>Обработчики "Правила конвертации группы свойств"</h1>
+<h2>Перед обработкой</h2>
+<h3>Условия возникновения события</h3>
+<p>Событие выполняется перед обработкой группы свойств, например, перед выгрузкой табличной части. Возможен отказ от выгрузки. Можно определить произвольную коллекцию, являющуюся источником данных.</p>
+<h3>Параметры:</h3>
+<p>Отказ - Булево - Если Истина, то группа свойств не обрабатывается</p>
+<p>Источник – выгружаемый объект.</p>
+<p>Приемник - xml-узел формируемого объекта приемника</p>
+<p>ВходящиеДанные – произвольные вспомогательные данные, переданные правилу конвертации из других правил, например, из правила выгрузки данных или правила конвертации свойств.</p>
+<p>ИсходящиеДанные – произвольные вспомогательные данные, передаваемые правилам конвертации свойств.</p>
+<p>КоллекцияОбъектов - Неопределено. Если в теле обработчика определить коллекцию (присвоив данной переменной значение, например, описывающее табличную часть или набор движений, например, типа ТаблицаЗначений), то стандартное получение коллекции выполняться не будет.</p>
+<p>НеЗамещать - Булево. По умолчанию определяется в настройках правила, но может быть изменено в теле обработчика. Если установить значение Истина, то для существующих объектов информационной базы загрузка подчиненных объектов (например, табличной части) выполняться не будет.</p>
+<p>НеОчищать - Булево. Если в теле обработчика данному параметру установить значение Истина, то существующие подчиненные  объекты (например, строки табличной части) удаляться не будут. Параметр используется только при загрузке на платформе 1С:Предприятие 8. Параметр игнорируется в обмене на технологии Библиотеки стандартных подсистем.</p>
+<p>УзелКоллекцииСвойств - xml-узел коллекции свойств</p>
+<h3>Пример:</h3>
+<p>ТабличнаяЧасть = СоздатьОбъект("ТаблицаЗначений");<br>ТабличнаяЧасть.НоваяКолонка("Количество");<br>ТабличнаяЧасть.НоваяКолонка("Номенклатура");<br>ТабличнаяЧасть.НоваяКолонка("Сумма");</p>
+<p>Рег = СоздатьОбъект("Регистр.Обороты");<br>Рег.ВыбратьДвиженияДокумента(Источник);<br>Пока Рег.ПолучитьДвижение() = 1 Цикл<br> НомерСтроки = Рег.НомерСтроки();<br> ТабличнаяЧасть.НоваяСтрока();<br> ТабличнаяЧасть.Количество  = Рег.РасходКво;<br> ТабличнаяЧасть.Номенклатура = Рег.ТМЦ;<br> ТабличнаяЧасть.Сумма = Рег.РасходСумма;<br>КонецЦикла;<br>ТабличнаяЧасть.Свернуть("Номенклатура", "Количество, Сумма");<br>ВходящиеДанные = СоздатьОбъект("СписокЗначений");<br>ВходящиеДанные.ДобавитьЗначение(ТабличнаяЧасть, "Услуги");</p>
+<p> </p></body></html>

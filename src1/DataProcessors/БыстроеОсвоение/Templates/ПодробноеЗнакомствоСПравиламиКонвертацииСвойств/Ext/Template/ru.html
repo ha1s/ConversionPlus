@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html xmlns:o="urn:schemas-microsoft-com:office:office"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta><link rel="stylesheet" type="text/css" href="__STYLE__"></link><meta name="GENERATOR" content="MSHTML 9.00.8112.16476"></meta><style>A:link {
+	COLOR: #0000ff; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+A:visited {
+	COLOR: #0000ff; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+H1 {
+	TEXT-ALIGN: left; FONT-FAMILY: Ariall, Tahoma; COLOR: #003366; FONT-SIZE: 18pt; FONT-WEIGHT: bold
+}
+H2 {
+	TEXT-ALIGN: left; FONT-FAMILY: Arial, Tahoma; FONT-SIZE: 14pt; FONT-WEIGHT: bold
+}
+H3 {
+	TEXT-ALIGN: left; FONT-FAMILY: Arial, Tahoma; FONT-SIZE: 12pt; FONT-WEIGHT: bold
+}
+TABLE {
+	FONT-SIZE: x-small
+}
+TABLE .Programtext {
+	PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #f0f0f0; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; COLOR: #0000ff; PADDING-TOP: 10px
+}
+BODY {
+	FONT-FAMILY: Verdana; FONT-SIZE: x-small
+}
+.withBorder {
+	TEXT-ALIGN: left; FONT-FAMILY: Verdana; FONT-SIZE: x-small; BORDER-TOP: #ffd700 1px solid; BORDER-RIGHT: #ffd700 1px solid
+}
+.withBorder TD {
+	BORDER-BOTTOM: #ffd700 1px solid; BORDER-LEFT: #ffd700 1px solid
+}
+.withBorder TH {
+	BORDER-BOTTOM: #ffd700 1px solid; BORDER-LEFT: #ffd700 1px solid; BACKGROUND-COLOR: #ffffee
+}
+UL.TOC LI {
+	LIST-STYLE-TYPE: none
+}
+.Programtext {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE.Query {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE.xml {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE.vbcode {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE {
+	FONT-SIZE: 10pt
+}
+.Marker {
+	BACKGROUND-COLOR: #ffff00
+}
+.heading {
+	BORDER-BOTTOM: #ffd700 1px solid; BORDER-LEFT: #ffd700 1px solid; BACKGROUND-COLOR: #ffffee; FONT-WEIGHT: bold
+}
+.tip {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeffee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.tip TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeffee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.important {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #ffeeee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.important TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #ffeeee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.note {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeeeff; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.note TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeeeff; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.k {
+	COLOR: red
+}
+.c {
+	COLOR: green
+}
+.s {
+	COLOR: black
+}
+.n {
+	COLOR: black
+}
+.p {
+	COLOR: brown
+}
+OL LI {
+	MARGIN-BOTTOM: 12pt
+}
+</style></head><body>
+<div align="left"><nobr>  </nobr></div>
+<h2>Подробное знакомство с правилами конвертации свойств</h2>
+<p>Как мы уже знаем, правила конвертации свойств используются для сопоставления реквизитов обменивающихся объектов. Естественно, что в правиле конвертации задаются реквизит из объекта источника и объекта приемника.</p>
+<p><img alt="Правило конвертации свойств" src="_files/30.bmp" width="622" height="430"></img></p>
+<p>Кроме того, для ссылочных реквизитов можно указать правило конвертации объектов, которое необходимо применить для переноса значения данного реквизита.</p>
+<p><strong>Поиск объекта при загрузке по данному свойству</strong> - флаг определяющий нужно ли по данному свойству производить поиск объектов в информационной базе приемнике. Если сразу у нескольких реквизитов установлено свойство поиска данных, то условия поиска объединяются по "И". В этом случае правило поиска звучит следующим образом: Найти объект у которых все реквизиты поиска совпадают с источником. (<strong>Внимание</strong> Поиск по уникальному идентификатору, который может быть установлен у правила конвертации объектов более приоритетный, то есть если он установлен то поиск будет выполнен по этому идентификатору).</p>
+<p><strong>Отключить обработку данного правила</strong> - флаг, позволяет отключить обработку данного свойства, не удаляя его из правил конвертации объектов.</p>
+<p><strong>Не замещать значение данного свойства у существующих объектов ИБ</strong> - флаг, позволяет отключить обработку данного для объектов информационной базы приемника, которые были найдены по уникальному идентификатору или по полям поиска.</p>
+<p><strong>Автоматически приводить значение к длине приемника</strong> - флаг, позволяет включить автоматическое приведение Номера или Кода справочника соответствующему значению в приемнике по длине. При этом префиксы сохраняются, а числовые части преобразуются под длину поля в приемнике.</p>
+<p>ТОЛЬКО ДЛЯ ОБМЕНА V8 - V8</p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: RU; mso-fareast-language: RU; mso-bidi-language: AR-SA">Функционал, позволяющий передавать дополнительные параметры в информационную базу приемник из источника.</span></p>
+<p><strong>Передавать данные в приемник - </strong>флаг определяет куда будут помещены данные при загрузке. Непосредственно в найденный для изменения объект.</p>
+<p><strong>Передавать данные в параметр - </strong>флаг определяет куда будут помещены данные при загрузке. В отдельное <span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: RU; mso-fareast-language: RU; mso-bidi-language: AR-SA">соответствие </span>для данного объекта, но не в сам объект. Этот подход удобен когда нужно передать какое либо значение в приемник, но нет реквизита куда нужно его поместить. <span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: RU; mso-fareast-language: RU; mso-bidi-language: AR-SA">Впоследствии </span>анализируя дополнительные параметры можно изменить логику заполнения объекта приемника. В правилах необходимо указать имя параметра куда нужно поместить данные. Для табличных частей и наборов движений для каждой строки формируется отдельная структура в которой хранится информация.</p>
+<p>Доступ к этим данным возможен в событии правила конвертации объекта "После загрузки". Например, так:</p>
+<p>Если ПараметрыОбъекта &lt;&gt; Неопределено тогда</p>
+<blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+<p>ИмяКонтрагента = ПараметрыОбъекта["ИмяКонтрагента"];</p></blockquote>
+<p dir="ltr">КонецЕсли;</p>
+<p>// Например, если нужен доступ к параметрам табличной части с именем "Товары"</p>
+<p>Если ПараметрыОбъекта &lt;&gt; Неопределено тогда</p>
+<blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+<p>ТаблицаПараметровТовары = ПараметрыОбъекта["ТоварыТабличнаяЧасть"];</p>
+<p>Если ТаблицаПараметровТовары &lt;&gt; Неопределено Тогда</p>
+<blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+<p>Для Каждого СтрокаПараметров Из ТаблицаПараметровТовары Цикл</p>
+<blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+<p>ИмяНоменклатуры = СтрокаПараметров.ИмяНоменклатуры;</p></blockquote>
+<p>КонецЦикла;</p></blockquote>
+<p dir="ltr">КонецЕсли;</p></blockquote>
+<p dir="ltr">КонецЕсли;</p>
+<p dir="ltr"><strong>Выгружать элементы группы через промежуточный файл</strong> <strong>- </strong>флаг определяет как выгружать объекты данного типа, через промежуточный файл (<span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: RU; mso-fareast-language: RU; mso-bidi-language: AR-SA">экономично </span>с точки зрения оперативной памяти) или напрямую через память (оптимально по скорости, но при больших объемах передаваемых данных оперативная память может закончится).</p>
+<p>На закладке "Дополнительно" можно редактировать вхождение правила в определенную группу, а так же его описание. <span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt">Наименование правила формируется автоматически и недоступно для изменения.<o:p></o:p></span></p>
+<p><a title="" href="DataProcessor.БыстроеОсвоение.Template.ЧтоТакоеОбработчикиСобытий/Template">Следующий раздел: «Что такое обработчики событий»</a></p></body></html>

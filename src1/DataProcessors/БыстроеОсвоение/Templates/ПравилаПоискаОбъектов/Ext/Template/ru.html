@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta><link rel="stylesheet" type="text/css" href="__STYLE__"></link><meta name="GENERATOR" content="MSHTML 8.00.7600.16671"></meta><style>A:link {
+	COLOR: #0000ff; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+A:visited {
+	COLOR: #0000ff; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+H1 {
+	TEXT-ALIGN: left; FONT-FAMILY: Ariall, Tahoma; COLOR: #003366; FONT-SIZE: 18pt; FONT-WEIGHT: bold
+}
+H2 {
+	TEXT-ALIGN: left; FONT-FAMILY: Arial, Tahoma; FONT-SIZE: 14pt; FONT-WEIGHT: bold
+}
+H3 {
+	TEXT-ALIGN: left; FONT-FAMILY: Arial, Tahoma; FONT-SIZE: 12pt; FONT-WEIGHT: bold
+}
+TABLE {
+	FONT-SIZE: x-small
+}
+TABLE .Programtext {
+	PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #f0f0f0; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; COLOR: #0000ff; PADDING-TOP: 10px
+}
+BODY {
+	FONT-FAMILY: Verdana; FONT-SIZE: x-small
+}
+.withBorder {
+	TEXT-ALIGN: left; FONT-FAMILY: Verdana; FONT-SIZE: x-small; BORDER-TOP: #ffd700 1px solid; BORDER-RIGHT: #ffd700 1px solid
+}
+.withBorder TD {
+	BORDER-BOTTOM: #ffd700 1px solid; BORDER-LEFT: #ffd700 1px solid
+}
+.withBorder TH {
+	BORDER-BOTTOM: #ffd700 1px solid; BORDER-LEFT: #ffd700 1px solid; BACKGROUND-COLOR: #ffffee
+}
+UL.TOC LI {
+	LIST-STYLE-TYPE: none
+}
+.Programtext {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE.Query {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE.xml {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE.vbcode {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE {
+	FONT-SIZE: 10pt
+}
+.Marker {
+	BACKGROUND-COLOR: #ffff00
+}
+.heading {
+	BORDER-BOTTOM: #ffd700 1px solid; BORDER-LEFT: #ffd700 1px solid; BACKGROUND-COLOR: #ffffee; FONT-WEIGHT: bold
+}
+.tip {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeffee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.tip TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeffee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.important {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #ffeeee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.important TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #ffeeee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.note {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeeeff; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.note TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeeeff; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.k {
+	COLOR: red
+}
+.c {
+	COLOR: green
+}
+.s {
+	COLOR: black
+}
+.n {
+	COLOR: black
+}
+.p {
+	COLOR: brown
+}
+OL LI {
+	MARGIN-BOTTOM: 12pt
+}
+</style></head><body>
+<div align="left"><nobr>  </nobr></div>
+<h2>Правила поиска объектов</h2>
+<p>Когда правила конвертации свойств и значений созданы, можно указать принципы сопоставления (поиска) объектов по их свойствам. Если говорить упрощенно, то пока мы умеем сообщать системе какой тип в какой должен преобразовываться. Например, документ "Реализация товаров и услуг" в источнике должен преобразовываться в документ "Реализация товаров и услуг" в приемнике. Но пока не знаем как системе сообщить, что документ в источнике "Реализация товаров и услуг" c номером 0001 и датой 01.01.2008 должен заменять документ  в приемнике "Реализация товаров и услуг"  с тем же номером.</p>
+<p>Нам нужно сообщить программе принципы поиска соответствующих объектов в приемнике. Это делается очень просто. Для свойств, по которым необходимо производить поиск объектов для их изменения, необходимо установить флажок поиск в соответствующем правиле конвертации свойств. Это можно сделать самостоятельно для каждого типа объектов. Если поиск установлен по нескольким реквизитам, то в информационной базе приемнике объект будет искаться на совпадение всем реквизитам объекта источника (то есть условия поиска объединяются логической операцией "И").</p>
+<p>Программа позволяет автоматически указать поля, по которым рекомендует выполнять поиск объектов.</p>
+<p>Достаточно перейти на закладку "Поиск объектов в приемнике" и программа предложит установить поиск по определенным свойствам.</p>
+<p><img alt="Правила поиска объектов" src="_files/311.bmp"></img></p>
+<p>При нажатии на кнопку "Установить правила поиска" программа установит поиск по выбранным свойствам.</p>
+<p>Если все необходимые правила конвертации объектов, свойств и значений созданы, установлены поля поиска объектов, то практически все готово к тому, что бы воспользоваться правилами и выполнить обмен данными между информационными базами.</p>
+<h3>Сопоставление объектов в конфигурациях на базе конфигурации "Библиотека стандартных подсистем" (БСП).</h3>
+<p>Сопоставление объектов в обменивающихся конфигурациях на базе БСП имеет свои особенности. Для сопоставления объектов используется специальный инструмент – помощник интерактивного обмена данными, который позволяет выполнять сопоставление в автоматическом, полуавтоматическом и в ручном режиме.<br>Поля поиска влияют на отображение полей в таблице сопоставления объектов в помощнике интерактивного обмена данными – порядок полей в таблице сопоставления помощника совпадает с порядком полей поиска в правиле конвертации объектов. Отдельно следует отметить тот факт, что в таблице сопоставления помощника одновременно может быть отображено не более пяти полей. Отсюда рекомендация – количество полей поиска следует задавать не большим пяти. <br>В режиме автоматического сопоставления объектов система сначала выполняет сопоставление по уникальным идентификаторам ссылок. Для объектов, для которых сопоставление по уникальным идентификаторам не дало положительного результата, выполняется сопоставление по всем полям поиска, которые указаны в правиле конвертации.<br>В полуавтоматическом режиме сопоставления объектов, пользователь может изменять набор полей сопоставления.</p>
+<p><a title="" href="DataProcessor.БыстроеОсвоение.Template.ПравилаВыгрузкиДанных/Template">Следующий раздел: «Создание Правил выгрузки данных»</a></p></body></html>

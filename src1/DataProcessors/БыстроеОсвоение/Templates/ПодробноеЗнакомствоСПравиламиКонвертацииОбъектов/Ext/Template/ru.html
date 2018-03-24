@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta><link rel="stylesheet" type="text/css" href="__STYLE__"></link><meta name="GENERATOR" content="MSHTML 9.00.8112.16446"></meta><style>A:link {
+	COLOR: #0000ff; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+A:visited {
+	COLOR: #0000ff; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+H1 {
+	TEXT-ALIGN: left; FONT-FAMILY: Ariall, Tahoma; COLOR: #003366; FONT-SIZE: 18pt; FONT-WEIGHT: bold
+}
+H2 {
+	TEXT-ALIGN: left; FONT-FAMILY: Arial, Tahoma; FONT-SIZE: 14pt; FONT-WEIGHT: bold
+}
+H3 {
+	TEXT-ALIGN: left; FONT-FAMILY: Arial, Tahoma; FONT-SIZE: 12pt; FONT-WEIGHT: bold
+}
+TABLE {
+	FONT-SIZE: x-small
+}
+TABLE .Programtext {
+	PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #f0f0f0; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; COLOR: #0000ff; PADDING-TOP: 10px
+}
+BODY {
+	FONT-FAMILY: Verdana; FONT-SIZE: x-small
+}
+.withBorder {
+	TEXT-ALIGN: left; FONT-FAMILY: Verdana; FONT-SIZE: x-small; BORDER-TOP: #ffd700 1px solid; BORDER-RIGHT: #ffd700 1px solid
+}
+.withBorder TD {
+	BORDER-BOTTOM: #ffd700 1px solid; BORDER-LEFT: #ffd700 1px solid
+}
+.withBorder TH {
+	BORDER-BOTTOM: #ffd700 1px solid; BORDER-LEFT: #ffd700 1px solid; BACKGROUND-COLOR: #ffffee
+}
+UL.TOC LI {
+	LIST-STYLE-TYPE: none
+}
+.Programtext {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE.Query {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE.xml {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE.vbcode {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE {
+	FONT-SIZE: 10pt
+}
+.Marker {
+	BACKGROUND-COLOR: #ffff00
+}
+.heading {
+	BORDER-BOTTOM: #ffd700 1px solid; BORDER-LEFT: #ffd700 1px solid; BACKGROUND-COLOR: #ffffee; FONT-WEIGHT: bold
+}
+.tip {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeffee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.tip TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeffee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.important {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #ffeeee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.important TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #ffeeee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.note {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeeeff; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.note TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeeeff; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.k {
+	COLOR: red
+}
+.c {
+	COLOR: green
+}
+.s {
+	COLOR: black
+}
+.n {
+	COLOR: black
+}
+.p {
+	COLOR: brown
+}
+OL LI {
+	MARGIN-BOTTOM: 12pt
+}
+</style></head><body>
+<div align="left"><nobr>  </nobr></div>
+<h2>Подробное знакомство с правилами конвертации объектов</h2>
+<p>Как мы уже знаем, правила конвертации объектов используются для сопоставления объектов в <span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: RU; mso-fareast-language: RU; mso-bidi-language: AR-SA">конфигурациях </span>источнике и приемнике. Естественно, что в правиле задается объект источник данных (то есть откуда брать данные) и объект - приемник данных (то есть куда переносить или записывать данные).</p>
+<p>Кроме них имеется еще ряд свойств смысл которых постараемся раскрыть.</p>
+<p><img style="WIDTH: 706px; HEIGHT: 581px" alt="Правило конвертации объектов" src="_files/1.bmp" width="665" height="517"></img></p>
+<p><strong>Искать объект приемника по внутреннему идентификатору объекта источника</strong> - флаг определяющий поиск объектов в приемнике для версии платформы V8. Если этот флажок взведен, то поиск объекта для модификации в базе приемнике осуществляется по внутреннему (уникальному) идентификатору объекта. Этот идентификатор не виден пользователю а средствами программы поддерживается уникальность идентификаторов в информационной базе, так что никакие два объекта информационной базы не имеют одинаковых идентификаторов.</p>
+<p><strong>Продолжить поиск по полям поиска, если по идентификатору объект приемник не найден</strong> - флаг определяет продолжать поиск объекта в информационной базе приемнике, если поиск по уникальному идентификатору не привел к положительному результату.</p>
+<p><strong>Не замещать существующие объекты в приемнике при загрузке, а только создавать новые и заполнять их *</strong> - флаг определяет нужно ли выполнять изменение реквизитов объекта в информационной базе приемнике, если объект был успешно найден по уникальному идентификатору или по полям поиска.</p>
+<p><strong>Не создавать новый объект в приемнике, если он НЕ найден *</strong> - флаг определяет нужно ли создавать новый объект в информационной базе - <span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: RU; mso-fareast-language: RU; mso-bidi-language: AR-SA">приемнике</span>, если он не был найден по уникальному идентификатору или по полям поиска.</p>
+<p><strong>При переносе объекта по ссылке НЕ создавать новый объект, а только переносить ссылку </strong>- флаг определяет нужно ли создавать новый объект в информационной базе - <span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: RU; mso-fareast-language: RU; mso-bidi-language: AR-SA">приемнике</span>, если он не был найден по уникальному идентификатору или по полям поиска в том случае если объект переносится по ссылке. Если объект не находится и у него установлен поиск по уникальносу идентификатору то будет перенесена только ссылка на объект (без полей поиска - одна ссылка). Если же объект выгружается непосредственно (то есть выгружается не только ссылка на объект, но и все его реквизиты), то флаг ни на что не влияет.</p>
+<p><strong>Не выгружать объекты свойств источника по ссылкам</strong> - флаг определяет нужно ли выгружать все объекты на которые есть ссылки у объекта источника или достаточно выгрузить только информацию о ссылках на эти объекты. Допустим вы выгружаете справочник номенклатура. Если у соответствующего ПКО не <span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: RU; mso-fareast-language: RU; mso-bidi-language: AR-SA">взведен </span>этот флажок, то кроме номенклатуры будут выгружены все объекты на которые она ссылается. Если же флаг взведен, то объекты на которые ссылается номенклатура выгружены не будут. Попробуйте поставить этот флажок и посмотреть результирующий файл выгрузки данных, а затем убрать его и сравнить результаты. Вам быстро станет понятен его смысл.</p>
+<p><strong>Не запоминать выгруженные объекты</strong> - флаг определяет нужно ли системе при выгрузке КЭШировать последние выгруженные объекты. КЭШирование позволяет ускорить процесс выгрузки и загрузки данных.</p>
+<p><strong>Использовать быстрый поиск объекта при выгрузке и загрузке</strong> - флаг определяет использовать ли быстрый поиск объектов для выгрузки. Имеет смысл применять для небольших по количеству записей справочников (Количество записей не более 1000 элементов). Эффект достигается в том случае, если у многих объектов установлен флаг <strong>Не выгружать объекты свойств по ссылкам.</strong> При такой схеме выгрузки и загрузке данных скорость возрастает в несколько раз.</p>
+<p><strong>Автоматически генерировать номер или код, если он не задан</strong> - флаг определяет нужно ли системе автоматически генерировать новый код или номер объекта, если перед записью он не заполнен.</p>
+<p><strong>On-line обмен</strong></p>
+<p><strong>Выгружать объект (полностью), только при наличии на него ссылки</strong> - настройка определяет при каких обстоятельствах необходимо выгружать объект. В том случае, если флажок установлен, то выгрузка объекта будет выполнена по следующим правилам:</p>
+<p>1. По правилам выгрузки если объект уже выгружался, то выгружаем его как есть<br>2. По правилам выгрузки если объект не выгружался, то не выгружаем<br>3. При выгрузке по ссылке на объект выгружаем целиком</p>
+<p>Например, если нужно переносить не всю номенклатуру из одной ИБ в другую, а только ту, на которую есть ссылки, то флажок подойдет.</p>
+<p><strong>Не замещать объект созданный в информационной базе приемнике при загрузке</strong> - настройка определяет нужно ли (обратно) переносить объект, который был создан в информационной базе, с которой организован обмен. То есть, если документ создан в информационной базе 1, при помощи обмена поступил в информационную базу 2, то стоит ли его при изменении в базе 2 переносить в базу 1. Настройка <span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: RU; mso-fareast-language: RU; mso-bidi-language: AR-SA">позволяет </span>указать приоритет объекта при обмене по месту его создания. То есть изменения в информационной базе, где был создан объект распространяются везде, а изменения в других базах не влияют на этот объект в базе 1.<br><br><strong>Приоритет объекта загрузки</strong> - настройка определяет приоритет объекта при загрузке в случае коллизии изменений. Значение по умолчанию и в случае незаполненного значения - Выше. Если произошла коллизия, программа анализирует приоритет объекта загрузки. Только в том случае, если приоритет объекта загрузки равен Выше он будет записан в информационную базу приемника. В случае если приоритет Совпадает или Ниже программа зафиксирует <span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: RU; mso-fareast-language: RU; mso-bidi-language: AR-SA">соответствующую</span> информацию о коллизии в информационной базе, но объект менять при этом не будет.</p>
+<p><strong>Варианты настроек полей поиска</strong> - таблица с возможными вариантами настроек полей поиска для пользователя. Разработчик правил определяет возможные комбинации полей поиска, которые пользователь может выбирать при настройке обмена. Все настройки указанные разработчиком правил должны быть отработаны в коде обработчика "Поля поиска". Переменная НастройкаПоиска в обработчике определяет выбранный пользователем вариант сопоставления (ИмяНастройкиДляАлгоритма из соответствующей строки таблицы). Если пользователь не выбрал ни один вариант сопоставления, или ему ни один вариант не был предложен, то НастройкаПоиска - пустая строка.</p>
+<p>На закладке "Дополнительно" можно редактировать наименование правила, вхождение его в определенную группу а так же описание правила.</p>
+<p><strong>Примечания:</strong> </p>
+<p><strong>*</strong>   Не рекомендуется для использования при настройке on-line обмена<br></p>
+<p><a title="" href="DataProcessor.БыстроеОсвоение.Template.ПодробноеЗнакомствоСПравиламиКонвертацииСвойств/Template">Следующий раздел: «Подробное знакомство с правилами конвертации объектов»</a></p></body></html>

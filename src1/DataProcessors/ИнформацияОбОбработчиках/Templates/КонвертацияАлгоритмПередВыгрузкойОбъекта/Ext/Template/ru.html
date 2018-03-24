@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta><link rel="stylesheet" type="text/css" href="__STYLE__"></link><meta name="GENERATOR" content="MSHTML 9.00.8112.16457"></meta><style>A:link {
+	COLOR: #0000ff; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+A:visited {
+	COLOR: #0000ff; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+H1 {
+	TEXT-ALIGN: left; FONT-FAMILY: Ariall, Tahoma; COLOR: #003366; FONT-SIZE: 18pt; FONT-WEIGHT: bold
+}
+H2 {
+	TEXT-ALIGN: left; FONT-FAMILY: Arial, Tahoma; FONT-SIZE: 14pt; FONT-WEIGHT: bold
+}
+H3 {
+	TEXT-ALIGN: left; FONT-FAMILY: Arial, Tahoma; FONT-SIZE: 12pt; FONT-WEIGHT: bold
+}
+TABLE {
+	FONT-SIZE: x-small
+}
+TABLE .Programtext {
+	PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #f0f0f0; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; COLOR: #0000ff; PADDING-TOP: 10px
+}
+BODY {
+	FONT-FAMILY: Verdana; FONT-SIZE: x-small
+}
+.withBorder {
+	TEXT-ALIGN: left; FONT-FAMILY: Verdana; FONT-SIZE: x-small; BORDER-TOP: #ffd700 1px solid; BORDER-RIGHT: #ffd700 1px solid
+}
+.withBorder TD {
+	BORDER-BOTTOM: #ffd700 1px solid; BORDER-LEFT: #ffd700 1px solid
+}
+.withBorder TH {
+	BORDER-BOTTOM: #ffd700 1px solid; BORDER-LEFT: #ffd700 1px solid; BACKGROUND-COLOR: #ffffee
+}
+UL.TOC LI {
+	LIST-STYLE-TYPE: none
+}
+.Programtext {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE.Query {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE.xml {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE.vbcode {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE {
+	FONT-SIZE: 10pt
+}
+.Marker {
+	BACKGROUND-COLOR: #ffff00
+}
+.heading {
+	BORDER-BOTTOM: #ffd700 1px solid; BORDER-LEFT: #ffd700 1px solid; BACKGROUND-COLOR: #ffffee; FONT-WEIGHT: bold
+}
+.tip {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeffee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.tip TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeffee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.important {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #ffeeee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.important TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #ffeeee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.note {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeeeff; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.note TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeeeff; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.k {
+	COLOR: red
+}
+.c {
+	COLOR: green
+}
+.s {
+	COLOR: black
+}
+.n {
+	COLOR: black
+}
+.p {
+	COLOR: brown
+}
+OL LI {
+	MARGIN-BOTTOM: 12pt
+}
+</style></head><body>
+<div align="left"><nobr>  </nobr></div>
+<h1>Обработчики "Конвертация"</h1>
+<h2>Перед выгрузкой объекта</h2>
+<h3>Условия возникновения события</h3>
+<p>Событие вызывается перед выгрузкой всех объектов в файл обмена, не зависимо от того какой объект выгружается. Вызов осуществляется до вызова одноименного обработчика "Правила выгрузки данных". Могут использоваться все параметры, определенные для одноименного обработчика правила выгрузки данных. По сути и назначению это тот же обработчик, но определенный на глобальном уровне - то есть вызываемый для всех правил выгрузки данных. Обработчик удобен, например, когда для документов всех видов нужно проверить одно и то же условие. Обработчик вызывается только для объектов которые выгружаются непосредственно, а не при выгрузке объекта по ссылке. В этом случае обработчики выгрузки не вызываются, а вызываются обработчики конвертации объекта.</p>
+<h3>Параметры:</h3>
+<p>Полностью совпадают с параметрами обработчика "Перед выгрузкой объекта" у "Правила выгрузки данных"</p>
+<h3>Пример:</h3>
+<p>Если Справочники.ТипВсеСсылки().СодержитТип(ТипЗнч(Объект)) Тогда<br> Если Объект.Метаданные().Реквизиты.Найти("Организация") &lt;&gt; Неопределено И (Параметры.Организация &lt;&gt; Объект.Организация) Тогда<br>  Отказ = Истина;<br> КонецЕсли;<br>КонецЕсли;</p></body></html>

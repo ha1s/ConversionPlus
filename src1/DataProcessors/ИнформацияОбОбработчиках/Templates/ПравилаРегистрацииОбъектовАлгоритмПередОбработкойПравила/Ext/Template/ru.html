@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta><link rel="stylesheet" type="text/css" href="__STYLE__"></link><meta name="GENERATOR" content="MSHTML 8.00.7600.16700"></meta><style>A:link {
+	COLOR: #0000ff; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+A:visited {
+	COLOR: #0000ff; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+H1 {
+	TEXT-ALIGN: left; FONT-FAMILY: Ariall, Tahoma; COLOR: #003366; FONT-SIZE: 18pt; FONT-WEIGHT: bold
+}
+H2 {
+	TEXT-ALIGN: left; FONT-FAMILY: Arial, Tahoma; FONT-SIZE: 14pt; FONT-WEIGHT: bold
+}
+H3 {
+	TEXT-ALIGN: left; FONT-FAMILY: Arial, Tahoma; FONT-SIZE: 12pt; FONT-WEIGHT: bold
+}
+TABLE {
+	FONT-SIZE: x-small
+}
+TABLE .Programtext {
+	PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #f0f0f0; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; COLOR: #0000ff; PADDING-TOP: 10px
+}
+BODY {
+	FONT-FAMILY: Verdana; FONT-SIZE: x-small
+}
+.withBorder {
+	TEXT-ALIGN: left; FONT-FAMILY: Verdana; FONT-SIZE: x-small; BORDER-TOP: #ffd700 1px solid; BORDER-RIGHT: #ffd700 1px solid
+}
+.withBorder TD {
+	BORDER-BOTTOM: #ffd700 1px solid; BORDER-LEFT: #ffd700 1px solid
+}
+.withBorder TH {
+	BORDER-BOTTOM: #ffd700 1px solid; BORDER-LEFT: #ffd700 1px solid; BACKGROUND-COLOR: #ffffee
+}
+UL.TOC LI {
+	LIST-STYLE-TYPE: none
+}
+.Programtext {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE.Query {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE.xml {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE.vbcode {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE {
+	FONT-SIZE: 10pt
+}
+.Marker {
+	BACKGROUND-COLOR: #ffff00
+}
+.heading {
+	BORDER-BOTTOM: #ffd700 1px solid; BORDER-LEFT: #ffd700 1px solid; BACKGROUND-COLOR: #ffffee; FONT-WEIGHT: bold
+}
+.tip {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeffee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.tip TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeffee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.important {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #ffeeee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.important TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #ffeeee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.note {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeeeff; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.note TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeeeff; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.k {
+	COLOR: red
+}
+.c {
+	COLOR: green
+}
+.s {
+	COLOR: black
+}
+.n {
+	COLOR: black
+}
+.p {
+	COLOR: brown
+}
+OL LI {
+	MARGIN-BOTTOM: 12pt
+}
+</style></head><body>
+<p> </p>
+<h1>Обработчики "Правила регистрации объектов"</h1>
+<h2>Перед обработкой</h2>
+<h3>Условие возникновения события</h3>
+<p>Событие выполняется перед применением правила регистрации, в момент, когда запрос к информационной базе для определения узлов-получателей еще не выполнен.</p>
+<h3>Контекст выполнения</h3>
+<p>Перед записью объекта; При выгрузке объекта.</p>
+<h3>Параметры:</h3>
+<p>Отказ – Булево – флаг отказа от выполнения правила регистрации. Отказ от выполнения правила означает, что объект не будет зарегистрирован на узлах плана обмена, для которого создано это правило.</p>
+<p>Объект – объект для которого выполняется правило регистрации</p>
+<p>ОбъектМетаданных – объект метаданных, соответствующий параметру Объект.</p>
+<p>Выгрузка (только чтение) – Булево – параметр определяет контекст выполнения правила регистрации. Истина – правило регистрации выполняется в контексте выгрузки объекта. Ложь – правило регистрации выполняется в контексте перед записью объекта.</p>
+<p>ПРО – СтрокаТаблицыЗначений – ссылка на правило регистрации объектов <a title="" href="DataProcessor.ИнформацияОбОбработчиках.Template.ПравилаРегистрацииОбъектовФорматПравилаРегистрации/Template">«Формат правила регистрации объектов»</a></p>
+<p>См. также <a title="" href="DataProcessor.ИнформацияОбОбработчиках.Template.ПравилаРегистрацииОбъектовПроцедурыИФункции/Template">«Процедуры и функции обработчиков правил регистрации»</a></p>
+<h3>Пример 1:</h3>
+<p>Пример иллюстрирует отказ от выполнения правила регистрации, если объект принадлежит справочнику Организации: </p>
+<p>Если ТипЗнч(Объект.Владелец) = Тип("СправочникСсылка.Организации") Тогда<br>   Отказ = Истина;<br>КонецЕсли;</p>
+<h3>Пример 2:</h3>
+<p>Пример иллюстрирует выполнение произвольного запроса с использованием заданных свойств объекта:<br><br>ПРО.СвойстваОбъекта = Новый Структура;<br>ПРО.СвойстваОбъекта.Вставить("СвойствоОбъекта_Дата",                             "Дата");<br>ПРО.СвойстваОбъекта.Вставить("Ответственный_Родитель_ПометкаУдаления", "Ответственный.Родитель.ПометкаУдаления");</p>
+<p>ПРО.ТекстЗапроса = "<br>|ВЫБРАТЬ РАЗЛИЧНЫЕ<br>| ПланОбмена.Ссылка КАК Ссылка<br>|ИЗ<br>| ПланОбмена._ДемоОбменБСП_БСП_1 КАК ПланОбмена<br>|ГДЕ<br>| ПланОбмена.ДатаНачалаВыгрузкиДокументов &lt;= &amp;СвойствоОбъекта_Дата<br>| И ПланОбмена.ПометкаУдаления                     = &amp;СвойствоОбъекта_Ответственный_Родитель_ПометкаУдаления<br>|";<br></p></body></html>

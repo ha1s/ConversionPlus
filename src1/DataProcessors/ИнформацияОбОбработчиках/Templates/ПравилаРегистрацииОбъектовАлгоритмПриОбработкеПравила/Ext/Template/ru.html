@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html xmlns:o="urn:schemas-microsoft-com:office:office"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta><link rel="stylesheet" type="text/css" href="__STYLE__"></link><meta name="GENERATOR" content="MSHTML 8.00.7600.16700"></meta><style>A:link {
+	COLOR: #0000ff; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+A:visited {
+	COLOR: #0000ff; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+H1 {
+	TEXT-ALIGN: left; FONT-FAMILY: Ariall, Tahoma; COLOR: #003366; FONT-SIZE: 18pt; FONT-WEIGHT: bold
+}
+H2 {
+	TEXT-ALIGN: left; FONT-FAMILY: Arial, Tahoma; FONT-SIZE: 14pt; FONT-WEIGHT: bold
+}
+H3 {
+	TEXT-ALIGN: left; FONT-FAMILY: Arial, Tahoma; FONT-SIZE: 12pt; FONT-WEIGHT: bold
+}
+TABLE {
+	FONT-SIZE: x-small
+}
+TABLE .Programtext {
+	PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #f0f0f0; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; COLOR: #0000ff; PADDING-TOP: 10px
+}
+BODY {
+	FONT-FAMILY: Verdana; FONT-SIZE: x-small
+}
+.withBorder {
+	TEXT-ALIGN: left; FONT-FAMILY: Verdana; FONT-SIZE: x-small; BORDER-TOP: #ffd700 1px solid; BORDER-RIGHT: #ffd700 1px solid
+}
+.withBorder TD {
+	BORDER-BOTTOM: #ffd700 1px solid; BORDER-LEFT: #ffd700 1px solid
+}
+.withBorder TH {
+	BORDER-BOTTOM: #ffd700 1px solid; BORDER-LEFT: #ffd700 1px solid; BACKGROUND-COLOR: #ffffee
+}
+UL.TOC LI {
+	LIST-STYLE-TYPE: none
+}
+.Programtext {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE.Query {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE.xml {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE.vbcode {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE {
+	FONT-SIZE: 10pt
+}
+.Marker {
+	BACKGROUND-COLOR: #ffff00
+}
+.heading {
+	BORDER-BOTTOM: #ffd700 1px solid; BORDER-LEFT: #ffd700 1px solid; BACKGROUND-COLOR: #ffffee; FONT-WEIGHT: bold
+}
+.tip {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeffee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.tip TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeffee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.important {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #ffeeee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.important TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #ffeeee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.note {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeeeff; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.note TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeeeff; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.k {
+	COLOR: red
+}
+.c {
+	COLOR: green
+}
+.s {
+	COLOR: black
+}
+.n {
+	COLOR: black
+}
+.p {
+	COLOR: brown
+}
+OL LI {
+	MARGIN-BOTTOM: 12pt
+}
+</style></head><body>
+<p style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" class="MsoNormal"><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"> <o:p></o:p></span></p>
+<h1 style="MARGIN: auto 0cm">Обработчики "Правила регистрации объектов"</h1>
+<h2 style="MARGIN: auto 0cm">При обработке</h2>
+<h3 style="MARGIN: auto 0cm">Условие возникновения события</h3>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><o:p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: RU; mso-fareast-language: RU; mso-bidi-language: AR-SA">Событие выполняется перед выполнением запроса к информационной базе для определения узлов-получателей, в момент, когда текст запроса сформирован и получены значения свойств объекта. Параметры запроса инициализированы значениями из текущей версии объекта.</span></o:p></span></p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><o:p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: RU; mso-fareast-language: RU; mso-bidi-language: AR-SA">
+<h3>Контекст выполнения</h3>
+<p>Перед записью объекта; При выгрузке объекта.</p></span></o:p></span>
+<h3 style="MARGIN: auto 0cm">Параметры:</h3>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><o:p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: RU; mso-fareast-language: RU; mso-bidi-language: AR-SA">Отказ – Булево – флаг отказа от выполнения обработчика и отказа от выполнения запроса к информационной базе для определения узлов-получателей.</span></o:p></span></p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt">Объект – объект, для которого выполняется правило регистрации. При регистрации объектов нессылочного типа в качестве объекта выступает запись набора записей.<o:p></o:p></span></p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: RU; mso-fareast-language: RU; mso-bidi-language: AR-SA">ТекстЗапроса – Строка – текст запроса, который будет использован для определения узлов-получателей. Текст запроса должен обязательно включать ключевое слово в разделе условий: [УсловиеОтбораПоРеквизитуФлагу] – см. пример.</span></span></p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><o:p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: RU; mso-fareast-language: RU; mso-bidi-language: AR-SA"><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: RU; mso-fareast-language: RU; mso-bidi-language: AR-SA">ПараметрыЗапроса – Структура – содержит значения свойств текущей версии объекта, которые используются в качестве параметров в запросе для определения узлов-получателей.</span></span></o:p></span></p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt">ИспользоватьКэш – Булево – параметр определяет включение платформенного механизма повторно используемых значений при определении узлов-получателей. Если передаваемые запросу значения в структуре ПараметрыЗапроса содержат недопустимые типы данных для платформенного механизма кэширования, то флаг следует сбросить. Значение по умолчанию – Истина.<o:p></o:p></span></p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt">Выгрузка (только чтение) – Булево – параметр определяет контекст выполнения правила регистрации. Истина – правило регистрации выполняется в контексте выгрузки объекта. Ложь – правило регистрации выполняется в контексте перед записью объекта.</span></p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt">См. также <a title="" href="DataProcessor.ИнформацияОбОбработчиках.Template.ПравилаРегистрацииОбъектовПроцедурыИФункции/Template">«Процедуры и функции обработчиков правил регистрации»</a></span></p><o:p></o:p>
+<h3 style="MARGIN: auto 0cm">Пример:</h3>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt">Пример описывает сценарий регистрации объекта, когда номенклатура в табличной части документа используется для выборки узлов-получателей. Параметр запроса НоменклатураДокумента представлен массивом элементов, поэтому платформенный механизм кэширования отключен (ИспользоватьКэш = Ложь).<o:p></o:p></span></p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt">ИспользоватьКэш = Ложь;</span></p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt">// Получаем значение параметра НоменклатураДокумента из текущей версии объекта<br>НоменклатураДокумента = Объект.Товары.ВыгрузитьКолонку("Номенклатура");<br>ПараметрыЗапроса.Вставить("НоменклатураДокумента", НоменклатураДокумента);</span></p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt">ТекстЗапроса = "<br>|ВЫБРАТЬ РАЗЛИЧНЫЕ ПланОбменаОсновнаяТаблица.Ссылка КАК Ссылка<br>|ИЗ<br>|ПланОбмена._ДемоОбменБСП_БСП КАК ПланОбменаОсновнаяТаблица<br>|ЛЕВОЕ СОЕДИНЕНИЕ<br>|ПланОбмена._ДемоОбменБСП_БСП.Номенклатура КАК _ДемоОбменБСП_БСПНоменклатура<br>|ПО ПланОбменаОсновнаяТаблица.Ссылка = _ДемоОбменБСП_БСПНоменклатура.Ссылка<br>|ГДЕ<br>|(ПланОбменаОсновнаяТаблица.ДатаНачалаВыгрузкиДокументов &lt;= &amp;СвойствоОбъекта_Дата<br>| И _ДемоОбменБСП_БСПНоменклатура.Номенклатура В (&amp;СвойствоОбъекта_НоменклатураДокумента) <br>| )<br>|И НЕ ПланОбменаОсновнаяТаблица.Ссылка = &amp;_ДемоОбменБСП_БСПЭтотУзел<br>|И НЕ ПланОбменаОсновнаяТаблица.ПометкаУдаления<br>|[УсловиеОтбораПоРеквизитуФлагу]<br>|";</span></p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"></span><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><strong>Примечание: </strong>Пример использования обработчика представлен в демонстрационной конфигурации "Библиотека стандартных подсистем" – документ "Демо: Поступление товаров".</span></p></body></html>

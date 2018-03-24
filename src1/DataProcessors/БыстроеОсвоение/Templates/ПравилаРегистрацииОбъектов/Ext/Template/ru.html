@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta><link rel="stylesheet" type="text/css" href="__STYLE__"></link><meta name="GENERATOR" content="MSHTML 8.00.7600.16671"></meta><style>A:link {
+	COLOR: #0000ff; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+A:visited {
+	COLOR: #0000ff; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+H1 {
+	TEXT-ALIGN: left; FONT-FAMILY: Ariall, Tahoma; COLOR: #003366; FONT-SIZE: 18pt; FONT-WEIGHT: bold
+}
+H2 {
+	TEXT-ALIGN: left; FONT-FAMILY: Arial, Tahoma; FONT-SIZE: 14pt; FONT-WEIGHT: bold
+}
+H3 {
+	TEXT-ALIGN: left; FONT-FAMILY: Arial, Tahoma; FONT-SIZE: 12pt; FONT-WEIGHT: bold
+}
+TABLE {
+	FONT-SIZE: x-small
+}
+TABLE .Programtext {
+	PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #f0f0f0; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; COLOR: #0000ff; PADDING-TOP: 10px
+}
+BODY {
+	FONT-FAMILY: Verdana; FONT-SIZE: x-small
+}
+.withBorder {
+	TEXT-ALIGN: left; FONT-FAMILY: Verdana; FONT-SIZE: x-small; BORDER-TOP: #ffd700 1px solid; BORDER-RIGHT: #ffd700 1px solid
+}
+.withBorder TD {
+	BORDER-BOTTOM: #ffd700 1px solid; BORDER-LEFT: #ffd700 1px solid
+}
+.withBorder TH {
+	BORDER-BOTTOM: #ffd700 1px solid; BORDER-LEFT: #ffd700 1px solid; BACKGROUND-COLOR: #ffffee
+}
+UL.TOC LI {
+	LIST-STYLE-TYPE: none
+}
+.Programtext {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE.Query {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE.xml {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE.vbcode {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE {
+	FONT-SIZE: 10pt
+}
+.Marker {
+	BACKGROUND-COLOR: #ffff00
+}
+.heading {
+	BORDER-BOTTOM: #ffd700 1px solid; BORDER-LEFT: #ffd700 1px solid; BACKGROUND-COLOR: #ffffee; FONT-WEIGHT: bold
+}
+.tip {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeffee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.tip TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeffee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.important {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #ffeeee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.important TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #ffeeee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.note {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeeeff; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.note TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeeeff; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.k {
+	COLOR: red
+}
+.c {
+	COLOR: green
+}
+.s {
+	COLOR: black
+}
+.n {
+	COLOR: black
+}
+.p {
+	COLOR: brown
+}
+OL LI {
+	MARGIN-BOTTOM: 12pt
+}
+</style></head><body>
+<p> </p>
+<h2>Правила регистрации объектов</h2>
+<p>В процессе обмена данными в общем случае участвуют не все объекты информационной базы, а только некоторое подмножество - объекты, которые были изменены с момента последнего обмена данными. Это становится возможным благодаря работе службе регистрации изменений. Очень часто требуется поддержать такой сценарий работы обмена данными, при котором объекты мигрируют не по всем информационным базам, участвующим в обмене, а только по выбранным. Для этого следует выполнить настройку ограничения миграции данных. <br>Для декларативного описания ограничений миграции данных используются <strong>Правила регистрации объектов</strong>. В правилах регистрации объектов интерактивно задаются условия фильтрации данных на узлах планов обмена. Примером ограничений могут служить ограничения по организациям, складам и пр.<br>Правила регистрации создаются только для заданной конфигурации и одного плана обмена. Правила регистрации подразделяются на две категории: </p>
+<ul><li><strong>ПРОБ</strong> - правила регистрации по свойствам объекта 
+</li><li><strong>ПРОП</strong> - правила регистрации по свойствам плана обмена</li></ul><p>В момент регистрации объекта эти правила выполняются последовательно, сначала выполняются <strong>ПРОБ</strong>, затем <strong>ПРОП</strong>. Если объект не проходит отбор, установленный <strong>ПРОБ</strong>, то <strong>ПРОП</strong> не выполняются и регистрация объекта к выгрузке не происходит.<br><strong>ПРОБ</strong> описывают сопоставление реквизитов объекта с произвольными значениями. <br><strong>ПРОП</strong> описывают сопоставление реквизитов плана обмена с реквизитами объекта и сопоставление реквизитов плана обмена со значениями констант примитивных типов*. По сути, эти правила и определяют множество узлов плана обмена, на котором будет выполнена регистрация объекта для выгрузки, или, говоря иначе, список информационных баз, в которые будет мигрировать объект.</p>
+<p>Поддерживаются три способа настройки ограничения миграции данных или три типа элементов отбора:</p>
+<ul><li>сопоставление свойств объекта с произвольными значениями  
+</li><li>сопоставление свойств объекта со свойствами плана обмена 
+</li><li>сопоставление свойств плана обмена с константами примитивных типов*</li></ul><p>Для настройки правил регистрации в качестве свойств плана обмена могут быть использованы реквизиты шапки и реквизиты табличных частей плана обмена. Для настройки правил регистрации в качестве свойств объекта могут быть использованы только реквизиты шапки объекта.<br>Для свойств плана обмена и свойств объекта поддерживается разыменование ссылочных полей, т.е. возможно получение вложенных свойств, например, <em>ДокументОснование.Контрагент.ИНН</em>. </p>
+<p>В правилах регистрации элементы отбора объединены в группы. При этом все элементы внутри одной группы будут сопоставляться по условию <strong>И</strong>, либо по условию <strong>ИЛИ</strong>. Элементы отбора корневой группы сопоставляются по условию <strong>И</strong>.<br>В правилах регистрации может быть задано произвольное количество элементов отбора сгруппированных произвольным образом.</p>
+<p><img src="_files/КД.png"></img></p>
+<p>На рисунке представлено правило регистрации документа «Авансовый отчет». В правиле регистрации имеет место сопоставление свойств документа со свойствами плана обмена. Свойства шапки документа <strong>Дата</strong> и <strong>Организация</strong> сопоставляются со свойством шапки плана обмена <strong>ДатаНачалаВыгрузкиДокументов</strong> и свойством <strong>Организация</strong> табличной части <strong>Организации</strong> плана обмена. Документ будет зарегистрирован на узле плана обмена, только если дата документа больше или равна дате, указанной в узле, и организация документа входит в подмножество организаций, указанных в табличной части узла при установленном отборе по организациям в узле (<strong>ИспользоватьОтборПоОрганизациям </strong>=<strong> Истина</strong>). Если отбор по организациям в узле не установлен (<strong>ИспользоватьОтборПоОрганизациям </strong>= <strong>Ложь</strong>), то будет использовано только ограничение по дате документа.<br>На закладке «Отбор по свойствам плана обмена» настраиваются <strong>ПРОП</strong>, а на закладке «Отбор по свойствам объекта» настраиваются <strong>ПРОБ</strong>.</p>
+<p>* В качестве примитивных типов используются следующие типы: <strong>Дата, Число, Строка, Булево.</strong> </p>
+<p><a title="" href="DataProcessor.БыстроеОсвоение.Template.ПравилаРегистрацииОбъектовОсобенностиИспользования/Template">Следующий раздел: «Правила регистрации объектов: Особенности использования»</a></p></body></html>

@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><link href="__STYLE__" type="text/css" rel="stylesheet"></link><meta content="MSHTML 6.00.2900.3603" name="GENERATOR"></meta><style>A:link {
+	FONT-WEIGHT: bold; COLOR: #0000ff; TEXT-DECORATION: underline
+}
+A:visited {
+	FONT-WEIGHT: bold; COLOR: #0000ff; TEXT-DECORATION: underline
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 18pt; COLOR: #003366; FONT-FAMILY: Ariall, Tahoma; TEXT-ALIGN: left
+}
+H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14pt; FONT-FAMILY: Arial, Tahoma; TEXT-ALIGN: left
+}
+H3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; FONT-FAMILY: Arial, Tahoma; TEXT-ALIGN: left
+}
+TABLE {
+	FONT-SIZE: x-small
+}
+TABLE .Programtext {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; COLOR: #0000ff; PADDING-TOP: 10px; BACKGROUND-COLOR: #f0f0f0
+}
+BODY {
+	FONT-SIZE: x-small; FONT-FAMILY: Verdana
+}
+.withBorder {
+	BORDER-RIGHT: #ffd700 1px solid; BORDER-TOP: #ffd700 1px solid; FONT-SIZE: x-small; FONT-FAMILY: Verdana; TEXT-ALIGN: left
+}
+.withBorder TD {
+	BORDER-LEFT: #ffd700 1px solid; BORDER-BOTTOM: #ffd700 1px solid
+}
+.withBorder TH {
+	BORDER-LEFT: #ffd700 1px solid; BORDER-BOTTOM: #ffd700 1px solid; BACKGROUND-COLOR: #ffffee
+}
+UL.TOC LI {
+	LIST-STYLE-TYPE: none
+}
+.Programtext {
+	FONT-SIZE: 10pt; COLOR: #000080; FONT-FAMILY: Courier
+}
+PRE.Query {
+	FONT-SIZE: 10pt; COLOR: #000080; FONT-FAMILY: Courier
+}
+PRE.xml {
+	FONT-SIZE: 10pt; COLOR: #000080; FONT-FAMILY: Courier
+}
+PRE.vbcode {
+	FONT-SIZE: 10pt; COLOR: #000080; FONT-FAMILY: Courier
+}
+PRE {
+	FONT-SIZE: 10pt
+}
+.Marker {
+	BACKGROUND-COLOR: #ffff00
+}
+.heading {
+	FONT-WEIGHT: bold; BORDER-LEFT: #ffd700 1px solid; BORDER-BOTTOM: #ffd700 1px solid; BACKGROUND-COLOR: #ffffee
+}
+.tip {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 15px; PADDING-LEFT: 15px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 15px; WIDTH: 95%; PADDING-TOP: 15px; BACKGROUND-COLOR: #eeffee; BORDER-RIGHT-WIDTH: 0px
+}
+.tip TD {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 15px; PADDING-LEFT: 15px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 15px; WIDTH: 95%; PADDING-TOP: 15px; BACKGROUND-COLOR: #eeffee; BORDER-RIGHT-WIDTH: 0px
+}
+.important {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 15px; PADDING-LEFT: 15px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 15px; WIDTH: 95%; PADDING-TOP: 15px; BACKGROUND-COLOR: #ffeeee; BORDER-RIGHT-WIDTH: 0px
+}
+.important TD {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 15px; PADDING-LEFT: 15px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 15px; WIDTH: 95%; PADDING-TOP: 15px; BACKGROUND-COLOR: #ffeeee; BORDER-RIGHT-WIDTH: 0px
+}
+.note {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 15px; PADDING-LEFT: 15px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 15px; WIDTH: 95%; PADDING-TOP: 15px; BACKGROUND-COLOR: #eeeeff; BORDER-RIGHT-WIDTH: 0px
+}
+.note TD {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 15px; PADDING-LEFT: 15px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 15px; WIDTH: 95%; PADDING-TOP: 15px; BACKGROUND-COLOR: #eeeeff; BORDER-RIGHT-WIDTH: 0px
+}
+.k {
+	COLOR: red
+}
+.c {
+	COLOR: green
+}
+.s {
+	COLOR: black
+}
+.n {
+	COLOR: black
+}
+.p {
+	COLOR: brown
+}
+OL LI {
+	MARGIN-BOTTOM: 12pt
+}
+</style></head><body>
+<div align="left"><nobr>  </nobr></div>
+<h2>Оптимизация правил обмена данными</h2>
+<p>Несколько простых рекомендаций, которые могут ускорить выгрузку и загрузку данных.</p>
+<h3 class="">Правила Выгрузки данных</h3>
+<p><strong></strong> </p>
+<p><em><strong>1. Порядок правил выгрузки данных</strong></em></p>
+<p>Рекомендуется располагать правила выгрузки данных в таком порядке, что бы ссылки <span style="FONT-SIZE: 10pt; FONT-FAMILY: Verdana; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: RU; mso-fareast-language: RU; mso-bidi-language: AR-SA">зависимых </span>объектов были снизу вверх. то есть самыми первыми должны <span style="FONT-SIZE: 10pt; FONT-FAMILY: Verdana; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: RU; mso-fareast-language: RU; mso-bidi-language: AR-SA">располагаться </span>правила выгрузки данных, объекты которых ни на кого не ссылаются, затем должны идти правила выгрузки объектов, ссылающихся на первую группу и т.д.</p>
+<p>Пример: Нужно выгрузить два справочника Пользователи и Физические лица. Справочник Пользователи имеет реквизит Физ. лицо - <span style="FONT-SIZE: 10pt; FONT-FAMILY: Verdana; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: RU; mso-fareast-language: RU; mso-bidi-language: AR-SA">ссылка </span>на справочник Физические лица.  То есть справочник Пользователи ссылается на справочник Физические лица. Рекомендуемая последовательность правил выгрузки в этом случае: Физические лица, пользователи.</p>
+<p><strong><em>2. Выбирать данные для выгрузки одним запросом</em></strong></p>
+<p>Если в правиле конвертации нет переноса табличных частей и движений, а так же в событиях перед выгрузкой нет прямых обращений к выгружаемому объекту, рекомендуется в правиле выгрузки данных использовать режим "Выбирать данные для выгрузки одним запросом". Этот режим позволит одним запросом получить все выгружаемые данные определенного типа, а не строить отдельные запросы для выгрузки каждого <span style="FONT-SIZE: 10pt; FONT-FAMILY: Verdana; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: RU; mso-fareast-language: RU; mso-bidi-language: AR-SA">объекта</span>.</p>
+<p> </p>
+<h3 class="">Правила Конвертации объектов</h3>
+<p class=""> </p>
+<p><em><strong>3. Использовать быстрый поиск при загрузке</strong></em></p>
+<p>Этот режим выгрузки и загрузки рекомендуется использовать для тех правил конвертации объектов, которые выгружают ссылочные типы общее количество которых сравнительно небольшое (примерно до 1000 элементов), на которые имеется множество ссылок в других объектов.</p>
+<p>Пример: Справочник Пользователи. Практически все документы <span style="FONT-SIZE: 10pt; FONT-FAMILY: Verdana; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: RU; mso-fareast-language: RU; mso-bidi-language: AR-SA">имеют </span>ссылку на этот справочник и количество элементов справочника не превосходит 1000.</p>
+<p><em><strong>4. Не выгружать объекты свойств по ссылкам</strong></em></p>
+<p>Режим позволяет для правила конвертации объектов не выгружать все элементы на которые есть ссылки. Если режим установлен, то при выгрузке будет выгружен сам объект и информация для поиска всех его ссылок, но полная информация о зависимых элементах выгружена не будет. Эта оптимизация может в несколько раз ускорить выгрузку и загрузку данных.</p>
+<p><strong><em>5. Не запоминать выгруженные объекты</em></strong></p>
+<p>Для правил конвертации не ссылочных объектов (регистров) нужно установить флажок "Не запоминать выгруженные объекты", так как ссылаться на строки регистра нельзя, поэтому нет и смысла запоминать те строки регистров, которые были выгружены. Для ссылочных объектов этот флажок, как правило, нужен, что бы оптимизировать повторное обращение для выгрузки одного и того же объекта.</p>
+<p><strong><em>6. Не делать общих обработчиков событий для всех объектов</em></strong></p>
+<p>Не рекомендуется использовать общие обработчики событий перед выгрузкой и загрузкой данных для всех объектов. Обработки выгрузки и загрузки не знают что будет выполняться в этих обработчиках поэтому некоторые оптимизации (например, при загрузке запись только измененных объектов) действовать не будут. Если есть необходимость использовать одни и те же алгоритмы обработки данных при выгрузке и загрузке, то рекомендуется создать новый Алгоритм, а в событиях у нужных объектов его вызывать.</p>
+<p> </p>
+<h3 class="">Обработка "Универсальный обмен данными XML"</h3>
+<p><strong><em>7. Использовать оптимизированный формат для обмена данными </em></strong></p>
+<p>Этот режим рекомендуется использовать при обмене данными V8-V8, если обработки выгрузки и загрузки на стороне источника и <span style="FONT-SIZE: 10pt; FONT-FAMILY: Verdana; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: RU; mso-fareast-language: RU; mso-bidi-language: AR-SA">приемника </span>не ниже 2.0.18</p>
+<p><em><strong>8. Загружать данные в режиме обмена</strong></em></p>
+<p>Позволяет отказать от излишних проверок на этапе загрузки данных</p>
+<p><em><strong>9. Записывать только измененные объекты</strong></em></p>
+<p>Позволяет производить запись только измененных объектов в информационную базу. Если объект изменен не был, то при загрузке из файла обмена он не будет перезаписан.</p>
+<p><em><strong>10. Оптимизированная запись объектов</strong></em></p>
+<p>Режим позволяет резко сократить количество обращений в информационной базе для записи объектов.</p>
+<p><em><strong>11. Записывать регистры наборами записей</strong></em></p>
+<p>Режим позволяет записывать изменения в регистрах наборами записей, а не <span style="FONT-SIZE: 10pt; FONT-FAMILY: Verdana; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: RU; mso-fareast-language: RU; mso-bidi-language: AR-SA">менеджерами </span>записей.</p>
+<p><em><strong>12. Обмен данными через COM</strong></em></p>
+<p>Для обмена V8-V8, если информационные базы источника и приемника находятся внутри одной локальной сети, рекомендуется использовать обмен через COM - соединение. Нужно только что бы в конфигурации приемника присутствовала обработка Универсальный обмена данными.</p>
+<p><a title="" href="DataProcessor.БыстроеОсвоение.Template.ПравилаРегистрацииОбъектов/Template">Следующий раздел: «Правила регистрации объектов»</a></p></body></html>

@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html xmlns:o="urn:schemas-microsoft-com:office:office"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta><link rel="stylesheet" type="text/css" href="__STYLE__"></link><meta name="GENERATOR" content="MSHTML 9.00.8112.16457"></meta><style>A:link {
+	COLOR: #0000ff; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+A:visited {
+	COLOR: #0000ff; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+H1 {
+	TEXT-ALIGN: left; FONT-FAMILY: Ariall, Tahoma; COLOR: #003366; FONT-SIZE: 18pt; FONT-WEIGHT: bold
+}
+H2 {
+	TEXT-ALIGN: left; FONT-FAMILY: Arial, Tahoma; FONT-SIZE: 14pt; FONT-WEIGHT: bold
+}
+H3 {
+	TEXT-ALIGN: left; FONT-FAMILY: Arial, Tahoma; FONT-SIZE: 12pt; FONT-WEIGHT: bold
+}
+TABLE {
+	FONT-SIZE: x-small
+}
+TABLE .Programtext {
+	PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #f0f0f0; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; COLOR: #0000ff; PADDING-TOP: 10px
+}
+BODY {
+	FONT-FAMILY: Verdana; FONT-SIZE: x-small
+}
+.withBorder {
+	TEXT-ALIGN: left; FONT-FAMILY: Verdana; FONT-SIZE: x-small; BORDER-TOP: #ffd700 1px solid; BORDER-RIGHT: #ffd700 1px solid
+}
+.withBorder TD {
+	BORDER-BOTTOM: #ffd700 1px solid; BORDER-LEFT: #ffd700 1px solid
+}
+.withBorder TH {
+	BORDER-BOTTOM: #ffd700 1px solid; BORDER-LEFT: #ffd700 1px solid; BACKGROUND-COLOR: #ffffee
+}
+UL.TOC LI {
+	LIST-STYLE-TYPE: none
+}
+.Programtext {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE.Query {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE.xml {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE.vbcode {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE {
+	FONT-SIZE: 10pt
+}
+.Marker {
+	BACKGROUND-COLOR: #ffff00
+}
+.heading {
+	BORDER-BOTTOM: #ffd700 1px solid; BORDER-LEFT: #ffd700 1px solid; BACKGROUND-COLOR: #ffffee; FONT-WEIGHT: bold
+}
+.tip {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeffee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.tip TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeffee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.important {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #ffeeee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.important TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #ffeeee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.note {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeeeff; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.note TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeeeff; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.k {
+	COLOR: red
+}
+.c {
+	COLOR: green
+}
+.s {
+	COLOR: black
+}
+.n {
+	COLOR: black
+}
+.p {
+	COLOR: brown
+}
+OL LI {
+	MARGIN-BOTTOM: 12pt
+}
+</style></head><body>
+<div align="left"><nobr>  </nobr></div>
+<h1>Обработчики "Правила конвертации объектов"</h1>
+<h2>Перед выгрузкой</h2>
+<h3>Условия возникновения события</h3>
+<p>Событие выполняется перед выгрузкой каждого объекта в файл обмена, не зависимо от того как выгружается объект по правилу выгрузки данных либо потому что на него есть ссылки. Событие вызывается, когда узел объекта приемника еще не создан и недоступен. Возможен отказ от выгрузки, например, в случае невыполнения каких-либо условий.</p>
+<h3>Параметры:</h3>
+<p>Параметры - Структура, в которой хранятся переменные доступные во всех обработчиках</p>
+<p>Источник - Произвольный - выгружаемый объект источник (ссылка или произвольные данные)</p>
+<p>Приемник - Строка. Строковое представление объекта приемника. Может использоваться для тех правил, у ктоторых приемник является значением примитивного типа (Строка, Число, Булево, Дата) или если при помощи правила предполагается идентифицировать по имени предопреденные значения какого-либо ссылочного типа.</p>
+<p>ВходящиеДанные - Произвольный - произвольные вспомогательные данные, переданные правилу конвертации из других правил (например из правила выгрузки данных или правила конвертации свойств). Значение параметра, как правило, имеет тип Структура, где ключи значений соответствуют структуре свойств объекта приемника. Таким образом, при конвертации свойств (в правиле конвертации свойств), конвертируемые данные (или часть данных) могут быть получены из этого параметра</p>
+<p>ИсходящиеДанные - Произвольный - произвольные вспомогательные данные. Данные передаются по следующим правилам:</p>
+<blockquote style="MARGIN-RIGHT: 0px" dir="ltr"><span style="WIDOWS: 2; TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(245,245,245); TEXT-INDENT: 0px; LETTER-SPACING: normal; DISPLAY: inline !important; FONT: 12px Tahoma, Verdana, Arial, Helvetica, sans-serif; WHITE-SPACE: normal; ORPHANS: 2; FLOAT: none; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px">
+<p style="TEXT-INDENT: -18pt; MARGIN-LEFT: 36pt; mso-list: l0 level1 lfo1; tab-stops: list 36.0pt"><font style="BACKGROUND-COLOR: #ffffff"><font><font><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt; mso-fareast-font-family: Verdana; mso-bidi-font-family: Verdana"><span style="mso-list: Ignore">1.<span style="FONT: 7pt 'Times New Roman'">      </span></span></span><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt">ПВД.ИсходящиеДанные -&gt; ПКО.ВходящиеДанные</span></font></font><o:p></o:p></font></p></span>
+<p style="TEXT-INDENT: -18pt; MARGIN-LEFT: 36pt; mso-list: l0 level1 lfo1; tab-stops: list 36.0pt"><font style="BACKGROUND-COLOR: #ffffff"><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt; mso-fareast-font-family: Verdana; mso-bidi-font-family: Verdana"><span style="mso-list: Ignore">2.<span style="FONT: 7pt 'Times New Roman'">      </span></span></span><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt">ПКО.ВходящиеДанные -&gt; ПКС.ВходящиеДанные</span></font></p>
+<p style="TEXT-INDENT: -18pt; MARGIN-LEFT: 36pt; mso-list: l0 level1 lfo1; tab-stops: list 36.0pt"><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"></span><font style="BACKGROUND-COLOR: #ffffff"><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt; mso-fareast-font-family: Verdana; mso-bidi-font-family: Verdana"><span style="mso-list: Ignore">3.<span style="FONT: 7pt 'Times New Roman'">      </span></span></span><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt">ПКС.ИсходящиеДанные -&gt; ПКО.ВходящиеДанные</span></font></p></blockquote>
+<p>ИмяПКО - Имя данного правила конвертации объектов</p>
+<p>ПКО - ссылка на данное правило конвертации объектов</p>
+<p>ВыгруженныеОбъекты - Соответствие.  Содержит перечень выгруженных по данному правилу объектов. Ключом соответствия является параметр КлючВыгружаемыхДанных, значением - число-номер объекта в файле. Может использоваться для проверки - выгружен ли объект по ссылкам из других объектов. В целях оптимизации, при выгрузке больших массивов данных, значение параметра может быть очищено - например в обработчике ПослеОбработкиПравилаВыгрузкиДанных</p>
+<p>Отказ - Булево - Если Истина, то объект не выгружается</p>
+<p>КлючВыгружаемыхДанных - Произвольный. По умолчанию - это ссылка на объект Источник, а если Источник неопределен, то используется ИмяПКО (подразумевается, что правило описывает в таком случае один объект-приемник). Данный параметр необходимо использовать если одному объекту источнику могут соответствовать несколько объектов приемника, например, в зависимости от входящих данных, или в случае, когда объект приемник полностью заполняется из входящих данных (например по результатам запроса), а объект источник, как таковой отсутствует.</p>
+<p>ЗапоминатьВыгруженные - Булево. По умолчанию  - определяется в правилах обмена, но может быть изменено. Универсальная обработка выгрузки данных хранит все выгруженные объекты в специальном списке и, таким образом, многократно встречающиеся объекты (по ссылкам из реквизитов других объектов) выгружаются единожды. Однако, установив данный параметр в значение Ложь, можно отключить этот режим. Данный режим может быть полезен для оптимизации, например, когда точно известно, что на выгружаемые объекты нет ссылок, а так же в случае, когда на основании одного объекта-источника в зависимости от различных условий могут формироваться несколько различных объектов-приемников. Только для платформы 1С:Предприятие 8.</p>
+<p>НеЗапоминатьВыгруженные - Булево. Параметр противоположный по смыслу параметру ЗапоминатьВыгруженные. По умолчанию  - определяется в правилах обмена, но может быть изменено. Только для платформы 1С:Предприятие 7.7.</p>
+<p>НеЗамещатьОбъектПриЗагрузке - Булево. По умолчанию  - определяется в правилах обмена, но может быть изменено. Если для данного параметра установить значение Истина, то объект идентифицированный при загрузке (т.е. найденный в информационной базе приемнике по значению синхронизирующих полей) не будет изменен/замещен.</p>
+<p>НеСоздаватьЕслиНеНайден – Булево. По умолчанию определяется в форме элемента правила конвертации объекта. Если Истина, то выполняется только поиск объекта в приемнике, новый объект не создается.</p>
+<p>ВсеОбъектыВыгружены - Булево. Если установить Истина, то объект не выгружается - лишь формируется узел ссылки. В списке выгруженных - объект не ищется.</p>
+<p>ТолькоПолучитьУзелСсылки - Если Истина, то объект не выгружается - лишь формируется узел ссылки. В списке выгруженных - объект ищется.</p>
+<p>РегистрироватьОбъектНаУзлеОтправителе – Булево. По умолчанию - Ложь. Если установить значение параметра в Истина, то объект будет зарегистрирован к выгрузке в базе-приемнике при загрузке данных. Такой режим обмена необходим при расщеплении одного объекта в первой информационной базе на несколько дочерних объектов во второй информационной базе (разных типов метаданных). ПКО дочернего объекта в родительский объект должно выставлять этот флаг в значение Истина. ПКО родительского объекта в дочерний объект не должно поднимать этот флаг. В противном случае возможен случай бесконечной миграции объекта между парой обменивающихся информационных баз. </p>
+<p>РежимЗаписи - Строка. Режим записи документа. Имеет смысл только если тип объекта приемника "Документ". Возможные значения "Запись", "Проведение", "ОтменаПроведения"</p>
+<p>РежимПроведения - Строка. Режим проведения документа. Имеет смысл только если тип объекта приемника "Документ". Возможные значения "Неоперативный", "Оперативный"</p>
+<h3>Пример:</h3>
+<p>Отказ = Источник.ЭтоГруппа();</p>
+<p>Если (ПустаяСтрока(Источник.Адрес) = 1) И  <br> (ПустаяСтрока(Источник.АдресПочт) = 1) И<br> (ПустаяСтрока(Источник.Телефоны) = 1) И<br> (ПустаяСтрока(Источник.eMail) = 1) Тогда<br> Отказ = 1;<br>КонецЕсли;</p></body></html>

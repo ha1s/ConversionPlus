@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta><link rel="stylesheet" type="text/css" href="__STYLE__"></link><meta name="GENERATOR" content="MSHTML 9.00.8112.16476"></meta><style>A:link {
+	COLOR: #0000ff; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+A:visited {
+	COLOR: #0000ff; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+H1 {
+	TEXT-ALIGN: left; FONT-FAMILY: Ariall, Tahoma; COLOR: #003366; FONT-SIZE: 18pt; FONT-WEIGHT: bold
+}
+H2 {
+	TEXT-ALIGN: left; FONT-FAMILY: Arial, Tahoma; FONT-SIZE: 14pt; FONT-WEIGHT: bold
+}
+H3 {
+	TEXT-ALIGN: left; FONT-FAMILY: Arial, Tahoma; FONT-SIZE: 12pt; FONT-WEIGHT: bold
+}
+TABLE {
+	FONT-SIZE: x-small
+}
+TABLE .Programtext {
+	PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #f0f0f0; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; COLOR: #0000ff; PADDING-TOP: 10px
+}
+BODY {
+	FONT-FAMILY: Verdana; FONT-SIZE: x-small
+}
+.withBorder {
+	TEXT-ALIGN: left; FONT-FAMILY: Verdana; FONT-SIZE: x-small; BORDER-TOP: #ffd700 1px solid; BORDER-RIGHT: #ffd700 1px solid
+}
+.withBorder TD {
+	BORDER-BOTTOM: #ffd700 1px solid; BORDER-LEFT: #ffd700 1px solid
+}
+.withBorder TH {
+	BORDER-BOTTOM: #ffd700 1px solid; BORDER-LEFT: #ffd700 1px solid; BACKGROUND-COLOR: #ffffee
+}
+UL.TOC LI {
+	LIST-STYLE-TYPE: none
+}
+.Programtext {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE.Query {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE.xml {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE.vbcode {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE {
+	FONT-SIZE: 10pt
+}
+.Marker {
+	BACKGROUND-COLOR: #ffff00
+}
+.heading {
+	BORDER-BOTTOM: #ffd700 1px solid; BORDER-LEFT: #ffd700 1px solid; BACKGROUND-COLOR: #ffffee; FONT-WEIGHT: bold
+}
+.tip {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeffee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.tip TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeffee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.important {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #ffeeee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.important TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #ffeeee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.note {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeeeff; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.note TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeeeff; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.k {
+	COLOR: red
+}
+.c {
+	COLOR: green
+}
+.s {
+	COLOR: black
+}
+.n {
+	COLOR: black
+}
+.p {
+	COLOR: brown
+}
+OL LI {
+	MARGIN-BOTTOM: 12pt
+}
+</style></head><body>
+<div align="left"><nobr>  </nobr></div>
+<h1>Обработчики "Правила конвертации объектов"</h1>
+<h2>Поля поиска</h2>
+<h3>Условия возникновения события</h3>
+<p>Только для платформы V8.<br>Событие выполняется при поиске элемента ссылочного типа. Если установлен поиск по уникальнму идентификатору и программа нашла элемент, то поиск прекращается. Если поиск по уникальному идентификатору не дал положительного результата и указано, что нужно продолжить поиск в этом случае или поиск по уникальному идентификатору не проводился, то программа пытается найти элементы по свойствам поиска. В обработчике нужно установить список полей через запятую по которым нужно проводить поиск. Если очередная попытка дала положительный результат, то поиск прекращается.<br>Поиск возможен только по тем полям у которых на этапе выгрузка был установлен флаг поиска данных.</p>
+<h3>Параметры:</h3>
+<p>НомерВариантаПоиска - число. Номер попытки поиска. Попыток поиска может быть не больше 10.</p>
+<p>СвойстваПоиска – соответствие, в котором хранятся текущие значения реквизитов поиска. Эти значения можно использовать в произвольных алгоритмах для идентификации объектов ИБ при загрузке данных. Следует иметь в виду, что при создании нового объекта, значения из соответствия СвойстваПоиска используются для заполнения свойств нового объекта.</p>
+<p>ПараметрыОбъекта - либо Неопределено либо Соответствие, в котором хранятся дополнительные параметры, переданные для данного объекта из источника в приемник. Если параметров передано не было, то ПараметрыОбъекта = Неопределено. В данном обработчике соответствие содержит только те параметры, для которых установлен признак поиска.</p>
+<p>ПрекратитьПоиск - булево. Если Истина, то поиск объекта прекращается, в зависимости от того СсылкаНаОбъект заполнена или нет создается новый объект.</p>
+<p>СсылкаНаОбъект - ссылка на результирующий объект. Если в обработчике установить данную ссылку (не пустую) то программа ее запомнит и поиск на этом будет считать успешно завершенным</p>
+<p>УстанавливатьУОбъектаВсеСвойстваПоиска - булево. Определяет нужно ли после удачного завершения поиска установить объекту все реквизиты поиска. Объект может быть найден по части реквизитов. Этот флаг определяет нужно оставшиеся реквизиты, которые не участвовали в поиске (но по которым поиск возможен) установить объекту или нет. Значение по умолчанию: Истина.</p>
+<p>НастройкаПоиска - строка. Выбранный пользователем вариант сопоставления объектов. В ПКО есть таблица Варианты настроек полей поиска - с возможными вариантами настроек полей поиска для пользователя. Разработчик правил определяет возможные комбинации полей поиска, которые пользователь может выбирать при настройке обмена. Все настройки указанные разработчиком правил должны быть отработаны в коде обработчика "Поля поиска". Переменная НастройкаПоиска в обработчике определяет выбранный пользователем вариант сопоставления (ИмяНастройкиДляАлгоритма из соответствующей строки таблицы). Если пользователь не выбрал ни один вариант сопоставления, или ему ни один вариант не был предложен, то НастройкаПоиска - пустая строка.</p>
+<p>СтрокаИменСвойствПоиска – строка в которой задаются ключевые поля варианта поиска. Могут быть указаны только те свойства, для которых при настройке правил обмена был выставлен флаг поиска.</p>
+<h3>Пример:</h3>
+<p>Если НомерВариантаПоиска = 1 тогда<br> <br> СтрокаИменСвойствПоиска = "Код, Наименование";<br> <br>ИначеЕсли НомерВариантаПоиска = 2 тогда<br> <br> СтрокаИменСвойствПоиска = "Код";<br> <br>Иначе<br> <br> СтрокаИменСвойствПоиска = "Наименование";<br> <br>КонецЕсли;</p></body></html>

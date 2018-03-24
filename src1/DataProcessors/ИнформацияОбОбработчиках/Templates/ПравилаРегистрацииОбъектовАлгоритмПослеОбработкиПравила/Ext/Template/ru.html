@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html xmlns:o="urn:schemas-microsoft-com:office:office"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta><link rel="stylesheet" type="text/css" href="__STYLE__"></link><meta name="GENERATOR" content="MSHTML 8.00.7600.16700"></meta><style>A:link {
+	COLOR: #0000ff; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+A:visited {
+	COLOR: #0000ff; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+H1 {
+	TEXT-ALIGN: left; FONT-FAMILY: Ariall, Tahoma; COLOR: #003366; FONT-SIZE: 18pt; FONT-WEIGHT: bold
+}
+H2 {
+	TEXT-ALIGN: left; FONT-FAMILY: Arial, Tahoma; FONT-SIZE: 14pt; FONT-WEIGHT: bold
+}
+H3 {
+	TEXT-ALIGN: left; FONT-FAMILY: Arial, Tahoma; FONT-SIZE: 12pt; FONT-WEIGHT: bold
+}
+TABLE {
+	FONT-SIZE: x-small
+}
+TABLE .Programtext {
+	PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #f0f0f0; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; COLOR: #0000ff; PADDING-TOP: 10px
+}
+BODY {
+	FONT-FAMILY: Verdana; FONT-SIZE: x-small
+}
+.withBorder {
+	TEXT-ALIGN: left; FONT-FAMILY: Verdana; FONT-SIZE: x-small; BORDER-TOP: #ffd700 1px solid; BORDER-RIGHT: #ffd700 1px solid
+}
+.withBorder TD {
+	BORDER-BOTTOM: #ffd700 1px solid; BORDER-LEFT: #ffd700 1px solid
+}
+.withBorder TH {
+	BORDER-BOTTOM: #ffd700 1px solid; BORDER-LEFT: #ffd700 1px solid; BACKGROUND-COLOR: #ffffee
+}
+UL.TOC LI {
+	LIST-STYLE-TYPE: none
+}
+.Programtext {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE.Query {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE.xml {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE.vbcode {
+	FONT-FAMILY: Courier; COLOR: #000080; FONT-SIZE: 10pt
+}
+PRE {
+	FONT-SIZE: 10pt
+}
+.Marker {
+	BACKGROUND-COLOR: #ffff00
+}
+.heading {
+	BORDER-BOTTOM: #ffd700 1px solid; BORDER-LEFT: #ffd700 1px solid; BACKGROUND-COLOR: #ffffee; FONT-WEIGHT: bold
+}
+.tip {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeffee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.tip TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeffee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.important {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #ffeeee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.important TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #ffeeee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.note {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeeeff; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.note TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeeeff; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.k {
+	COLOR: red
+}
+.c {
+	COLOR: green
+}
+.s {
+	COLOR: black
+}
+.n {
+	COLOR: black
+}
+.p {
+	COLOR: brown
+}
+OL LI {
+	MARGIN-BOTTOM: 12pt
+}
+</style></head><body>
+<p style="MARGIN: 0cm 0cm 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" class="MsoNormal"><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"> <o:p></o:p></span></p>
+<h1 style="MARGIN: auto 0cm">Обработчики "Правила регистрации объектов"</h1>
+<h2 style="MARGIN: auto 0cm">После обработки</h2>
+<h3 style="MARGIN: auto 0cm">Условие возникновения события</h3>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt">Событие выполняется после выполнения запроса к информационной базе, когда определен список узлов-получателей. Список узлов-получателей сформирован, но не применен к объекту. Можно очистить или дополнить список узлов-получателей.</span></p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt">
+<h3>Контекст выполнения</h3>
+<p>Перед записью объекта; При выгрузке объекта.</p><o:p></o:p></span>
+<h3 style="MARGIN: auto 0cm">Параметры:</h3>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt">Отказ – Булево – флаг отказа от выполнения правила регистрации. Отказ от выполнения правила означает, что объект не будет зарегистрирован на узлах плана обмена, для которого создано это правило.<o:p></o:p></span></p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt">Объект – объект, для которого выполняется правило регистрации.<o:p></o:p></span></p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt">ОбъектМетаданных – объект метаданных, соответствующий параметру Объект.</span></p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt">Выгрузка (только чтение) – Булево – параметр определяет контекст выполнения правила регистрации. Истина – правило регистрации выполняется в контексте выгрузки объекта. Ложь – правило регистрации выполняется в контексте перед записью объекта.</span></p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt">Получатели – Массив – список узлов-получателей, на которых будет зарегистрирован объект.</span></p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt">
+<p>См. также <a title="" href="DataProcessor.ИнформацияОбОбработчиках.Template.ПравилаРегистрацииОбъектовПроцедурыИФункции/Template">«Процедуры и функции обработчиков правил регистрации»</a></p><o:p></o:p></span>
+<h3 style="MARGIN: auto 0cm">Пример 1:</h3>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt">Пример выводит пользователю в окно сообщений список узлов, на которых будет зарегистрирован текущий объект при записи: <o:p></o:p></span></p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt">Для Каждого Узел Из Получатели Цикл<br><span style="mso-spacerun: yes">    </span>Сообщить("Объект будет зарегистрирован на узле: " + Строка(Узел));<br>КонецЦикла;<o:p></o:p></span></p>
+<h3 style="MARGIN: auto 0cm">Пример 2:</h3>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt">Добавление в список узлов получателей обязательного узла для выгрузки, значение которого хранится в параметре сеанса:<o:p></o:p></span></p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt">Получатели.Добавить(ПараметрыСеанса.ОбязательныйУзелДляВыгрузкиДанных);</span></p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt">
+<p><strong><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt">Примечание: </span></strong><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt">Пример использования обработчика представлен в демонстрационной конфигурации "Библиотека стандартных подсистем" – справочник "Демо: Контрагенты".</span></p></span></body></html>
