@@ -438,8 +438,8 @@
 		<Metadata name="CommonForm.ФормаРедактированияТекста.Form" id="5a324f4b-337c-4780-af25-32a168353be1.0" configVersion="c0494eb3ccd4ec4bb0e1d52c2b56a11a00000000"/>
 		<Metadata name="CommonForm.ХодВыполненияОбработкиДанных" id="eadcaaeb-e80f-40f4-b475-3686ea53e46c" configVersion="9e6a3a0fcc545a448a5083980638a16700000000"/>
 		<Metadata name="CommonForm.ХодВыполненияОбработкиДанных.Form" id="eadcaaeb-e80f-40f4-b475-3686ea53e46c.0" configVersion="29a186d20dcda847a467fd5886bc929f00000000"/>
-		<Metadata name="CommonModule.bnГитфлоу" id="4c2590bb-501f-4db6-85ea-6916cf8cb55e" configVersion="975bb9f6cf2b3640abad21f2b2956aeb00000000"/>
-		<Metadata name="CommonModule.bnГитфлоу.Module" id="4c2590bb-501f-4db6-85ea-6916cf8cb55e.0" configVersion="08ba25547b0e974896e10d02c18f4ef000000000"/>
+		<Metadata name="CommonModule.bnГитфлоу" id="4c2590bb-501f-4db6-85ea-6916cf8cb55e" configVersion="81554779ca1f0a4e83f255b0fe3280f100000000"/>
+		<Metadata name="CommonModule.bnГитфлоу.Module" id="4c2590bb-501f-4db6-85ea-6916cf8cb55e.0" configVersion="68795c86aa9c8641a722d4334c33ff1800000000"/>
 		<Metadata name="CommonModule.bnГитфлоуПовтИсп" id="c5c05b3f-3c40-4361-ac99-230f61c658d5" configVersion="56a2847cc4465547bc6234db89e4f44b00000000"/>
 		<Metadata name="CommonModule.bnГитфлоуПовтИсп.Module" id="c5c05b3f-3c40-4361-ac99-230f61c658d5.0" configVersion="eca6e404e55477419e401e881ae3d11e00000000"/>
 		<Metadata name="CommonModule.ОбщегоНазначения" id="e04a8fff-1b0f-4b17-88d4-d1f9e1c89a83" configVersion="eb10c3aacb20ab42a37827f9ae5b23ad00000000"/>
