@@ -199,6 +199,7 @@
 			<CommonPicture>УправляемоеПриложение</CommonPicture>
 			<CommonPicture>Элемент</CommonPicture>
 			<CommonPicture>ЭлементУдаление</CommonPicture>
+			<CommonPicture>bnОтменитьИзменения</CommonPicture>
 			<Interface>Полный</Interface>
 			<SessionParameter>ТекущийПользователь</SessionParameter>
 			<Role>ПолныеПрава</Role>
@@ -211,6 +212,8 @@
 			<CommonModule>УправлениеПользователями</CommonModule>
 			<CommonModule>bnГитфлоу</CommonModule>
 			<CommonModule>bnГитфлоуПовтИсп</CommonModule>
+			<CommonModule>ОбщегоНазначенияКлиентСервер</CommonModule>
+			<CommonModule>РедакторОбработчиковКлиент</CommonModule>
 			<Constant>НомерВерсииКонфигурации</Constant>
 			<CommonForm>Конфигурация</CommonForm>
 			<CommonForm>ПравилаОбмена</CommonForm>

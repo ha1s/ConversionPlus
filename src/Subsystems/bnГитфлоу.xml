@@ -21,6 +21,9 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.bnНастройкиГитфлоу</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ВыгрузкаКонвертации</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаКонвертации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.bnОтменитьИзменения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщегоНазначенияКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РедакторОбработчиковКлиент</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
